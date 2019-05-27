@@ -1,0 +1,2840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000C40 /* Foundation.framework */; };
+		000000000C60 /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000E0 /* AnimationContainer.swift */; };
+		000000000C70 /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000100 /* CompositionLayer.swift */; };
+		000000000C80 /* ImageCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000110 /* ImageCompositionLayer.swift */; };
+		000000000C90 /* MaskContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000120 /* MaskContainerLayer.swift */; };
+		000000000CA0 /* NullCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000130 /* NullCompositionLayer.swift */; };
+		000000000CB0 /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000140 /* PreCompositionLayer.swift */; };
+		000000000CC0 /* ShapeCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000150 /* ShapeCompositionLayer.swift */; };
+		000000000CD0 /* SolidCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000160 /* SolidCompositionLayer.swift */; };
+		000000000CE0 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000170 /* TextCompositionLayer.swift */; };
+		000000000CF0 /* CompositionLayersInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000190 /* CompositionLayersInitializer.swift */; };
+		000000000D00 /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* InvertedMatteLayer.swift */; };
+		000000000D10 /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* LayerImageProvider.swift */; };
+		000000000D20 /* LayerTransformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* LayerTransformNode.swift */; };
+		000000000D30 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* Animation.swift */; };
+		000000000D40 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* Asset.swift */; };
+		000000000D50 /* AssetLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000210 /* AssetLibrary.swift */; };
+		000000000D60 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000220 /* ImageAsset.swift */; };
+		000000000D70 /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000230 /* PrecompAsset.swift */; };
+		000000000D80 /* KeyedDecodingContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000250 /* KeyedDecodingContainerExtensions.swift */; };
+		000000000D90 /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000270 /* Keyframe.swift */; };
+		000000000DA0 /* KeyframeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000280 /* KeyframeGroup.swift */; };
+		000000000DB0 /* ImageLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* ImageLayerModel.swift */; };
+		000000000DC0 /* LayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* LayerModel.swift */; };
+		000000000DD0 /* PreCompLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* PreCompLayerModel.swift */; };
+		000000000DE0 /* ShapeLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* ShapeLayerModel.swift */; };
+		000000000DF0 /* SolidLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* SolidLayerModel.swift */; };
+		000000000E00 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* TextLayerModel.swift */; };
+		000000000E10 /* DashPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000310 /* DashPattern.swift */; };
+		000000000E20 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000320 /* Marker.swift */; };
+		000000000E30 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000330 /* Mask.swift */; };
+		000000000E40 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000340 /* Transform.swift */; };
+		000000000E50 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000360 /* Ellipse.swift */; };
+		000000000E60 /* FillI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000370 /* FillI.swift */; };
+		000000000E70 /* GradientFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000380 /* GradientFill.swift */; };
+		000000000E80 /* GradientStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000390 /* GradientStroke.swift */; };
+		000000000E90 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* Group.swift */; };
+		000000000EA0 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* Merge.swift */; };
+		000000000EB0 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* Rectangle.swift */; };
+		000000000EC0 /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* Repeater.swift */; };
+		000000000ED0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* Shape.swift */; };
+		000000000EE0 /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* ShapeItem.swift */; };
+		000000000EF0 /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000400 /* ShapeTransform.swift */; };
+		000000000F00 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000410 /* Star.swift */; };
+		000000000F10 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000420 /* Stroke.swift */; };
+		000000000F20 /* Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000430 /* Trim.swift */; };
+		000000000F30 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000450 /* Font.swift */; };
+		000000000F40 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000460 /* Glyph.swift */; };
+		000000000F50 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000470 /* TextAnimator.swift */; };
+		000000000F60 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000480 /* TextDocument.swift */; };
+		000000000F70 /* ItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004B0 /* ItemsExtension.swift */; };
+		000000000F80 /* NodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004D0 /* NodeProperty.swift */; };
+		000000000F90 /* AnyNodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004F0 /* AnyNodeProperty.swift */; };
+		000000000FA0 /* AnyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000500 /* AnyValueContainer.swift */; };
+		000000000FB0 /* KeypathSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000510 /* KeypathSearchable.swift */; };
+		000000000FC0 /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000520 /* NodePropertyMap.swift */; };
+		000000000FD0 /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000530 /* ValueContainer.swift */; };
+		000000000FE0 /* GroupInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000550 /* GroupInterpolator.swift */; };
+		000000000FF0 /* KeyframeInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000560 /* KeyframeInterpolator.swift */; };
+		000000001000 /* SingleValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000570 /* SingleValueProvider.swift */; };
+		000000001010 /* TrimPathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005A0 /* TrimPathNode.swift */; };
+		000000001020 /* GroupOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005C0 /* GroupOutputNode.swift */; };
+		000000001030 /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005D0 /* PassThroughOutputNode.swift */; };
+		000000001040 /* PathOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005E0 /* PathOutputNode.swift */; };
+		000000001050 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000600 /* FillRenderer.swift */; };
+		000000001060 /* GradientFillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000610 /* GradientFillRenderer.swift */; };
+		000000001070 /* GradientStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000620 /* GradientStrokeRenderer.swift */; };
+		000000001080 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000630 /* StrokeRenderer.swift */; };
+		000000001090 /* EllipseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000650 /* EllipseNode.swift */; };
+		0000000010A0 /* PolygonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000660 /* PolygonNode.swift */; };
+		0000000010B0 /* RectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000670 /* RectNode.swift */; };
+		0000000010C0 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000680 /* ShapeNode.swift */; };
+		0000000010D0 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000690 /* StarNode.swift */; };
+		0000000010E0 /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006B0 /* GroupNode.swift */; };
+		0000000010F0 /* FillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006D0 /* FillNode.swift */; };
+		000000001100 /* GradientFillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006E0 /* GradientFillNode.swift */; };
+		000000001110 /* GradientStrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006F0 /* GradientStrokeNode.swift */; };
+		000000001120 /* StrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000700 /* StrokeNode.swift */; };
+		000000001130 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000720 /* TextAnimatorNode.swift */; };
+		000000001140 /* AnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000740 /* AnimatorNode.swift */; };
+		000000001150 /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000750 /* PathNode.swift */; };
+		000000001160 /* RenderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000760 /* RenderNode.swift */; };
+		000000001170 /* ShapeContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000780 /* ShapeContainerLayer.swift */; };
+		000000001180 /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000790 /* ShapeRenderLayer.swift */; };
+		000000001190 /* AnimatorNodeDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007C0 /* AnimatorNodeDebugging.swift */; };
+		0000000011A0 /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007D0 /* LayerDebugging.swift */; };
+		0000000011B0 /* AnimationKeypathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007F0 /* AnimationKeypathExtension.swift */; };
+		0000000011C0 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000800 /* CGFloatExtensions.swift */; };
+		0000000011D0 /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000810 /* MathKit.swift */; };
+		0000000011E0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000820 /* StringExtensions.swift */; };
+		0000000011F0 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000840 /* AnimationContext.swift */; };
+		000000001200 /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000860 /* Interpolatable.swift */; };
+		000000001210 /* InterpolatableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000870 /* InterpolatableExtensions.swift */; };
+		000000001220 /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000880 /* KeyframeExtensions.swift */; };
+		000000001230 /* BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008A0 /* BezierPath.swift */; };
+		000000001240 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008B0 /* ColorExtension.swift */; };
+		000000001250 /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008C0 /* CompoundBezierPath.swift */; };
+		000000001260 /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008D0 /* CurveVertex.swift */; };
+		000000001270 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008E0 /* PathElement.swift */; };
+		000000001280 /* VectorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008F0 /* VectorsExtensions.swift */; };
+		000000001290 /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000920 /* AnimationPublic.swift */; };
+		0000000012A0 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000930 /* AnimationView.swift */; };
+		0000000012B0 /* AnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000940 /* AnimationViewInitializers.swift */; };
+		0000000012C0 /* AnimationCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000960 /* AnimationCacheProvider.swift */; };
+		0000000012D0 /* LRUAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000970 /* LRUAnimationCache.swift */; };
+		0000000012E0 /* AnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000990 /* AnimationKeypath.swift */; };
+		0000000012F0 /* AnyValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009A0 /* AnyValueProvider.swift */; };
+		000000001300 /* ColorValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009C0 /* ColorValueProvider.swift */; };
+		000000001310 /* FloatValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009D0 /* FloatValueProvider.swift */; };
+		000000001320 /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009E0 /* PointValueProvider.swift */; };
+		000000001330 /* SizeValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009F0 /* SizeValueProvider.swift */; };
+		000000001340 /* AnimationImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A10 /* AnimationImageProvider.swift */; };
+		000000001350 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AC0 /* AnimatedButton.swift */; };
+		000000001360 /* AnimatedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AD0 /* AnimatedControl.swift */; };
+		000000001370 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AE0 /* AnimatedSwitch.swift */; };
+		000000001380 /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AF0 /* AnimationSubview.swift */; };
+		000000001390 /* BundleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B00 /* BundleImageProvider.swift */; };
+		0000000013A0 /* CompatibleAnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B20 /* CompatibleAnimationKeypath.swift */; };
+		0000000013B0 /* CompatibleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B30 /* CompatibleAnimationView.swift */; };
+		0000000013C0 /* FilepathImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B40 /* FilepathImageProvider.swift */; };
+		0000000013D0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B50 /* LottieView.swift */; };
+		0000000013E0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B60 /* UIColorExtension.swift */; };
+		0000000013F0 /* AnimationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A80 /* AnimationTime.swift */; };
+		000000001400 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A90 /* Color.swift */; };
+		000000001410 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AA0 /* Vectors.swift */; };
+		000000001460 /* lottie-ios-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001450 /* lottie-ios-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0000000014A0 /* lottie-ios-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001490 /* lottie-ios-iOS-dummy.m */; };
+		000000001560 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001550 /* Cocoa.framework */; };
+		000000001570 /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000E0 /* AnimationContainer.swift */; };
+		000000001580 /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000100 /* CompositionLayer.swift */; };
+		000000001590 /* ImageCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000110 /* ImageCompositionLayer.swift */; };
+		0000000015A0 /* MaskContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000120 /* MaskContainerLayer.swift */; };
+		0000000015B0 /* NullCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000130 /* NullCompositionLayer.swift */; };
+		0000000015C0 /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000140 /* PreCompositionLayer.swift */; };
+		0000000015D0 /* ShapeCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000150 /* ShapeCompositionLayer.swift */; };
+		0000000015E0 /* SolidCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000160 /* SolidCompositionLayer.swift */; };
+		0000000015F0 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000170 /* TextCompositionLayer.swift */; };
+		000000001600 /* CompositionLayersInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000190 /* CompositionLayersInitializer.swift */; };
+		000000001610 /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* InvertedMatteLayer.swift */; };
+		000000001620 /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* LayerImageProvider.swift */; };
+		000000001630 /* LayerTransformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* LayerTransformNode.swift */; };
+		000000001640 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* Animation.swift */; };
+		000000001650 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* Asset.swift */; };
+		000000001660 /* AssetLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000210 /* AssetLibrary.swift */; };
+		000000001670 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000220 /* ImageAsset.swift */; };
+		000000001680 /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000230 /* PrecompAsset.swift */; };
+		000000001690 /* KeyedDecodingContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000250 /* KeyedDecodingContainerExtensions.swift */; };
+		0000000016A0 /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000270 /* Keyframe.swift */; };
+		0000000016B0 /* KeyframeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000280 /* KeyframeGroup.swift */; };
+		0000000016C0 /* ImageLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* ImageLayerModel.swift */; };
+		0000000016D0 /* LayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* LayerModel.swift */; };
+		0000000016E0 /* PreCompLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* PreCompLayerModel.swift */; };
+		0000000016F0 /* ShapeLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* ShapeLayerModel.swift */; };
+		000000001700 /* SolidLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* SolidLayerModel.swift */; };
+		000000001710 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* TextLayerModel.swift */; };
+		000000001720 /* DashPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000310 /* DashPattern.swift */; };
+		000000001730 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000320 /* Marker.swift */; };
+		000000001740 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000330 /* Mask.swift */; };
+		000000001750 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000340 /* Transform.swift */; };
+		000000001760 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000360 /* Ellipse.swift */; };
+		000000001770 /* FillI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000370 /* FillI.swift */; };
+		000000001780 /* GradientFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000380 /* GradientFill.swift */; };
+		000000001790 /* GradientStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000390 /* GradientStroke.swift */; };
+		0000000017A0 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* Group.swift */; };
+		0000000017B0 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* Merge.swift */; };
+		0000000017C0 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* Rectangle.swift */; };
+		0000000017D0 /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* Repeater.swift */; };
+		0000000017E0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* Shape.swift */; };
+		0000000017F0 /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* ShapeItem.swift */; };
+		000000001800 /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000400 /* ShapeTransform.swift */; };
+		000000001810 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000410 /* Star.swift */; };
+		000000001820 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000420 /* Stroke.swift */; };
+		000000001830 /* Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000430 /* Trim.swift */; };
+		000000001840 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000450 /* Font.swift */; };
+		000000001850 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000460 /* Glyph.swift */; };
+		000000001860 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000470 /* TextAnimator.swift */; };
+		000000001870 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000480 /* TextDocument.swift */; };
+		000000001880 /* ItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004B0 /* ItemsExtension.swift */; };
+		000000001890 /* NodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004D0 /* NodeProperty.swift */; };
+		0000000018A0 /* AnyNodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004F0 /* AnyNodeProperty.swift */; };
+		0000000018B0 /* AnyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000500 /* AnyValueContainer.swift */; };
+		0000000018C0 /* KeypathSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000510 /* KeypathSearchable.swift */; };
+		0000000018D0 /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000520 /* NodePropertyMap.swift */; };
+		0000000018E0 /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000530 /* ValueContainer.swift */; };
+		0000000018F0 /* GroupInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000550 /* GroupInterpolator.swift */; };
+		000000001900 /* KeyframeInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000560 /* KeyframeInterpolator.swift */; };
+		000000001910 /* SingleValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000570 /* SingleValueProvider.swift */; };
+		000000001920 /* TrimPathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005A0 /* TrimPathNode.swift */; };
+		000000001930 /* GroupOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005C0 /* GroupOutputNode.swift */; };
+		000000001940 /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005D0 /* PassThroughOutputNode.swift */; };
+		000000001950 /* PathOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005E0 /* PathOutputNode.swift */; };
+		000000001960 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000600 /* FillRenderer.swift */; };
+		000000001970 /* GradientFillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000610 /* GradientFillRenderer.swift */; };
+		000000001980 /* GradientStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000620 /* GradientStrokeRenderer.swift */; };
+		000000001990 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000630 /* StrokeRenderer.swift */; };
+		0000000019A0 /* EllipseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000650 /* EllipseNode.swift */; };
+		0000000019B0 /* PolygonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000660 /* PolygonNode.swift */; };
+		0000000019C0 /* RectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000670 /* RectNode.swift */; };
+		0000000019D0 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000680 /* ShapeNode.swift */; };
+		0000000019E0 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000690 /* StarNode.swift */; };
+		0000000019F0 /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006B0 /* GroupNode.swift */; };
+		000000001A00 /* FillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006D0 /* FillNode.swift */; };
+		000000001A10 /* GradientFillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006E0 /* GradientFillNode.swift */; };
+		000000001A20 /* GradientStrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006F0 /* GradientStrokeNode.swift */; };
+		000000001A30 /* StrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000700 /* StrokeNode.swift */; };
+		000000001A40 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000720 /* TextAnimatorNode.swift */; };
+		000000001A50 /* AnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000740 /* AnimatorNode.swift */; };
+		000000001A60 /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000750 /* PathNode.swift */; };
+		000000001A70 /* RenderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000760 /* RenderNode.swift */; };
+		000000001A80 /* ShapeContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000780 /* ShapeContainerLayer.swift */; };
+		000000001A90 /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000790 /* ShapeRenderLayer.swift */; };
+		000000001AA0 /* AnimatorNodeDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007C0 /* AnimatorNodeDebugging.swift */; };
+		000000001AB0 /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007D0 /* LayerDebugging.swift */; };
+		000000001AC0 /* AnimationKeypathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007F0 /* AnimationKeypathExtension.swift */; };
+		000000001AD0 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000800 /* CGFloatExtensions.swift */; };
+		000000001AE0 /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000810 /* MathKit.swift */; };
+		000000001AF0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000820 /* StringExtensions.swift */; };
+		000000001B00 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000840 /* AnimationContext.swift */; };
+		000000001B10 /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000860 /* Interpolatable.swift */; };
+		000000001B20 /* InterpolatableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000870 /* InterpolatableExtensions.swift */; };
+		000000001B30 /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000880 /* KeyframeExtensions.swift */; };
+		000000001B40 /* BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008A0 /* BezierPath.swift */; };
+		000000001B50 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008B0 /* ColorExtension.swift */; };
+		000000001B60 /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008C0 /* CompoundBezierPath.swift */; };
+		000000001B70 /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008D0 /* CurveVertex.swift */; };
+		000000001B80 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008E0 /* PathElement.swift */; };
+		000000001B90 /* VectorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008F0 /* VectorsExtensions.swift */; };
+		000000001BA0 /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000920 /* AnimationPublic.swift */; };
+		000000001BB0 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000930 /* AnimationView.swift */; };
+		000000001BC0 /* AnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000940 /* AnimationViewInitializers.swift */; };
+		000000001BD0 /* AnimationCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000960 /* AnimationCacheProvider.swift */; };
+		000000001BE0 /* LRUAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000970 /* LRUAnimationCache.swift */; };
+		000000001BF0 /* AnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000990 /* AnimationKeypath.swift */; };
+		000000001C00 /* AnyValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009A0 /* AnyValueProvider.swift */; };
+		000000001C10 /* ColorValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009C0 /* ColorValueProvider.swift */; };
+		000000001C20 /* FloatValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009D0 /* FloatValueProvider.swift */; };
+		000000001C30 /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009E0 /* PointValueProvider.swift */; };
+		000000001C40 /* SizeValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009F0 /* SizeValueProvider.swift */; };
+		000000001C50 /* AnimationImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A10 /* AnimationImageProvider.swift */; };
+		000000001C60 /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A30 /* AnimationSubview.swift */; };
+		000000001C70 /* BundleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A40 /* BundleImageProvider.swift */; };
+		000000001C80 /* FilepathImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* FilepathImageProvider.swift */; };
+		000000001C90 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A60 /* LottieView.swift */; };
+		000000001CA0 /* AnimationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A80 /* AnimationTime.swift */; };
+		000000001CB0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A90 /* Color.swift */; };
+		000000001CC0 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AA0 /* Vectors.swift */; };
+		000000001D00 /* lottie-ios-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001CF0 /* lottie-ios-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000001D40 /* lottie-ios-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001D30 /* lottie-ios-macOS-dummy.m */; };
+		000000001E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001DF0 /* Foundation.framework */; };
+		000000001E10 /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000E0 /* AnimationContainer.swift */; };
+		000000001E20 /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000100 /* CompositionLayer.swift */; };
+		000000001E30 /* ImageCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000110 /* ImageCompositionLayer.swift */; };
+		000000001E40 /* MaskContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000120 /* MaskContainerLayer.swift */; };
+		000000001E50 /* NullCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000130 /* NullCompositionLayer.swift */; };
+		000000001E60 /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000140 /* PreCompositionLayer.swift */; };
+		000000001E70 /* ShapeCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000150 /* ShapeCompositionLayer.swift */; };
+		000000001E80 /* SolidCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000160 /* SolidCompositionLayer.swift */; };
+		000000001E90 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000170 /* TextCompositionLayer.swift */; };
+		000000001EA0 /* CompositionLayersInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000190 /* CompositionLayersInitializer.swift */; };
+		000000001EB0 /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* InvertedMatteLayer.swift */; };
+		000000001EC0 /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* LayerImageProvider.swift */; };
+		000000001ED0 /* LayerTransformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* LayerTransformNode.swift */; };
+		000000001EE0 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* Animation.swift */; };
+		000000001EF0 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* Asset.swift */; };
+		000000001F00 /* AssetLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000210 /* AssetLibrary.swift */; };
+		000000001F10 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000220 /* ImageAsset.swift */; };
+		000000001F20 /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000230 /* PrecompAsset.swift */; };
+		000000001F30 /* KeyedDecodingContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000250 /* KeyedDecodingContainerExtensions.swift */; };
+		000000001F40 /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000270 /* Keyframe.swift */; };
+		000000001F50 /* KeyframeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000280 /* KeyframeGroup.swift */; };
+		000000001F60 /* ImageLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* ImageLayerModel.swift */; };
+		000000001F70 /* LayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* LayerModel.swift */; };
+		000000001F80 /* PreCompLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* PreCompLayerModel.swift */; };
+		000000001F90 /* ShapeLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* ShapeLayerModel.swift */; };
+		000000001FA0 /* SolidLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* SolidLayerModel.swift */; };
+		000000001FB0 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* TextLayerModel.swift */; };
+		000000001FC0 /* DashPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000310 /* DashPattern.swift */; };
+		000000001FD0 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000320 /* Marker.swift */; };
+		000000001FE0 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000330 /* Mask.swift */; };
+		000000001FF0 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000340 /* Transform.swift */; };
+		000000002000 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000360 /* Ellipse.swift */; };
+		000000002010 /* FillI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000370 /* FillI.swift */; };
+		000000002020 /* GradientFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000380 /* GradientFill.swift */; };
+		000000002030 /* GradientStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000390 /* GradientStroke.swift */; };
+		000000002040 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* Group.swift */; };
+		000000002050 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* Merge.swift */; };
+		000000002060 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* Rectangle.swift */; };
+		000000002070 /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* Repeater.swift */; };
+		000000002080 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* Shape.swift */; };
+		000000002090 /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* ShapeItem.swift */; };
+		0000000020A0 /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000400 /* ShapeTransform.swift */; };
+		0000000020B0 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000410 /* Star.swift */; };
+		0000000020C0 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000420 /* Stroke.swift */; };
+		0000000020D0 /* Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000430 /* Trim.swift */; };
+		0000000020E0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000450 /* Font.swift */; };
+		0000000020F0 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000460 /* Glyph.swift */; };
+		000000002100 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000470 /* TextAnimator.swift */; };
+		000000002110 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000480 /* TextDocument.swift */; };
+		000000002120 /* ItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004B0 /* ItemsExtension.swift */; };
+		000000002130 /* NodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004D0 /* NodeProperty.swift */; };
+		000000002140 /* AnyNodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004F0 /* AnyNodeProperty.swift */; };
+		000000002150 /* AnyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000500 /* AnyValueContainer.swift */; };
+		000000002160 /* KeypathSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000510 /* KeypathSearchable.swift */; };
+		000000002170 /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000520 /* NodePropertyMap.swift */; };
+		000000002180 /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000530 /* ValueContainer.swift */; };
+		000000002190 /* GroupInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000550 /* GroupInterpolator.swift */; };
+		0000000021A0 /* KeyframeInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000560 /* KeyframeInterpolator.swift */; };
+		0000000021B0 /* SingleValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000570 /* SingleValueProvider.swift */; };
+		0000000021C0 /* TrimPathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005A0 /* TrimPathNode.swift */; };
+		0000000021D0 /* GroupOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005C0 /* GroupOutputNode.swift */; };
+		0000000021E0 /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005D0 /* PassThroughOutputNode.swift */; };
+		0000000021F0 /* PathOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005E0 /* PathOutputNode.swift */; };
+		000000002200 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000600 /* FillRenderer.swift */; };
+		000000002210 /* GradientFillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000610 /* GradientFillRenderer.swift */; };
+		000000002220 /* GradientStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000620 /* GradientStrokeRenderer.swift */; };
+		000000002230 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000630 /* StrokeRenderer.swift */; };
+		000000002240 /* EllipseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000650 /* EllipseNode.swift */; };
+		000000002250 /* PolygonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000660 /* PolygonNode.swift */; };
+		000000002260 /* RectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000670 /* RectNode.swift */; };
+		000000002270 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000680 /* ShapeNode.swift */; };
+		000000002280 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000690 /* StarNode.swift */; };
+		000000002290 /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006B0 /* GroupNode.swift */; };
+		0000000022A0 /* FillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006D0 /* FillNode.swift */; };
+		0000000022B0 /* GradientFillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006E0 /* GradientFillNode.swift */; };
+		0000000022C0 /* GradientStrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006F0 /* GradientStrokeNode.swift */; };
+		0000000022D0 /* StrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000700 /* StrokeNode.swift */; };
+		0000000022E0 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000720 /* TextAnimatorNode.swift */; };
+		0000000022F0 /* AnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000740 /* AnimatorNode.swift */; };
+		000000002300 /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000750 /* PathNode.swift */; };
+		000000002310 /* RenderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000760 /* RenderNode.swift */; };
+		000000002320 /* ShapeContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000780 /* ShapeContainerLayer.swift */; };
+		000000002330 /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000790 /* ShapeRenderLayer.swift */; };
+		000000002340 /* AnimatorNodeDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007C0 /* AnimatorNodeDebugging.swift */; };
+		000000002350 /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007D0 /* LayerDebugging.swift */; };
+		000000002360 /* AnimationKeypathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007F0 /* AnimationKeypathExtension.swift */; };
+		000000002370 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000800 /* CGFloatExtensions.swift */; };
+		000000002380 /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000810 /* MathKit.swift */; };
+		000000002390 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000820 /* StringExtensions.swift */; };
+		0000000023A0 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000840 /* AnimationContext.swift */; };
+		0000000023B0 /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000860 /* Interpolatable.swift */; };
+		0000000023C0 /* InterpolatableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000870 /* InterpolatableExtensions.swift */; };
+		0000000023D0 /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000880 /* KeyframeExtensions.swift */; };
+		0000000023E0 /* BezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008A0 /* BezierPath.swift */; };
+		0000000023F0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008B0 /* ColorExtension.swift */; };
+		000000002400 /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008C0 /* CompoundBezierPath.swift */; };
+		000000002410 /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008D0 /* CurveVertex.swift */; };
+		000000002420 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008E0 /* PathElement.swift */; };
+		000000002430 /* VectorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008F0 /* VectorsExtensions.swift */; };
+		000000002440 /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000920 /* AnimationPublic.swift */; };
+		000000002450 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000930 /* AnimationView.swift */; };
+		000000002460 /* AnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000940 /* AnimationViewInitializers.swift */; };
+		000000002470 /* AnimationCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000960 /* AnimationCacheProvider.swift */; };
+		000000002480 /* LRUAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000970 /* LRUAnimationCache.swift */; };
+		000000002490 /* AnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000990 /* AnimationKeypath.swift */; };
+		0000000024A0 /* AnyValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009A0 /* AnyValueProvider.swift */; };
+		0000000024B0 /* ColorValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009C0 /* ColorValueProvider.swift */; };
+		0000000024C0 /* FloatValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009D0 /* FloatValueProvider.swift */; };
+		0000000024D0 /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009E0 /* PointValueProvider.swift */; };
+		0000000024E0 /* SizeValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009F0 /* SizeValueProvider.swift */; };
+		0000000024F0 /* AnimationImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A10 /* AnimationImageProvider.swift */; };
+		000000002500 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AC0 /* AnimatedButton.swift */; };
+		000000002510 /* AnimatedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AD0 /* AnimatedControl.swift */; };
+		000000002520 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AE0 /* AnimatedSwitch.swift */; };
+		000000002530 /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AF0 /* AnimationSubview.swift */; };
+		000000002540 /* BundleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B00 /* BundleImageProvider.swift */; };
+		000000002550 /* CompatibleAnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B20 /* CompatibleAnimationKeypath.swift */; };
+		000000002560 /* CompatibleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B30 /* CompatibleAnimationView.swift */; };
+		000000002570 /* FilepathImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B40 /* FilepathImageProvider.swift */; };
+		000000002580 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B50 /* LottieView.swift */; };
+		000000002590 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B60 /* UIColorExtension.swift */; };
+		0000000025A0 /* AnimationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A80 /* AnimationTime.swift */; };
+		0000000025B0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A90 /* Color.swift */; };
+		0000000025C0 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AA0 /* Vectors.swift */; };
+		000000002600 /* lottie-ios-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000025F0 /* lottie-ios-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000002640 /* lottie-ios-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002630 /* lottie-ios-tvOS-dummy.m */; };
+		0000000026E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000C40 /* Foundation.framework */; };
+		000000002750 /* Pods-lottie-swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000002740 /* Pods-lottie-swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0000000027B0 /* Pods-lottie-swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000027A0 /* Pods-lottie-swift_Example-dummy.m */; };
+		000000002850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000C40 /* Foundation.framework */; };
+		0000000028C0 /* Pods-lottie-swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000028B0 /* Pods-lottie-swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000002920 /* Pods-lottie-swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002910 /* Pods-lottie-swift_Tests-dummy.m */; };
+		0000000029C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001550 /* Cocoa.framework */; };
+		000000002A30 /* Pods-lottie-swift_macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000002A20 /* Pods-lottie-swift_macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000002A90 /* Pods-lottie-swift_macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002A80 /* Pods-lottie-swift_macOS-dummy.m */; };
+		000000002B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000001DF0 /* Foundation.framework */; };
+		000000002BA0 /* Pods-lottie-swift_tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000002B90 /* Pods-lottie-swift_tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		000000002C00 /* Pods-lottie-swift_tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002BF0 /* Pods-lottie-swift_tvOS-dummy.m */; };
+		000000002C20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002C10 /* UIKit.framework */; };
+		000000002C40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002C30 /* CoreGraphics.framework */; };
+		000000002C60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002C50 /* QuartzCore.framework */; };
+		000000002C80 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002C70 /* AppKit.framework */; };
+		000000002CA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002C90 /* CoreGraphics.framework */; };
+		000000002CC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002CB0 /* QuartzCore.framework */; };
+		000000002CE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002CD0 /* UIKit.framework */; };
+		000000002D00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002CF0 /* CoreGraphics.framework */; };
+		000000002D20 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002D10 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000002D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000014B0;
+			remoteInfo = "lottie-ios-macOS";
+		};
+		000000002D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000001D50;
+			remoteInfo = "lottie-ios-tvOS";
+		};
+		000000002D70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000BA0;
+			remoteInfo = "lottie-ios-iOS";
+		};
+		000000002D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000002650;
+			remoteInfo = "Pods-lottie-swift_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000000000B0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0000000000E0 /* AnimationContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationContainer.swift; sourceTree = "<group>"; };
+		000000000100 /* CompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CompositionLayer.swift; sourceTree = "<group>"; };
+		000000000110 /* ImageCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCompositionLayer.swift; sourceTree = "<group>"; };
+		000000000120 /* MaskContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaskContainerLayer.swift; sourceTree = "<group>"; };
+		000000000130 /* NullCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NullCompositionLayer.swift; sourceTree = "<group>"; };
+		000000000140 /* PreCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreCompositionLayer.swift; sourceTree = "<group>"; };
+		000000000150 /* ShapeCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeCompositionLayer.swift; sourceTree = "<group>"; };
+		000000000160 /* SolidCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SolidCompositionLayer.swift; sourceTree = "<group>"; };
+		000000000170 /* TextCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextCompositionLayer.swift; sourceTree = "<group>"; };
+		000000000190 /* CompositionLayersInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CompositionLayersInitializer.swift; sourceTree = "<group>"; };
+		0000000001A0 /* InvertedMatteLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InvertedMatteLayer.swift; sourceTree = "<group>"; };
+		0000000001B0 /* LayerImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerImageProvider.swift; sourceTree = "<group>"; };
+		0000000001C0 /* LayerTransformNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerTransformNode.swift; sourceTree = "<group>"; };
+		0000000001E0 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		000000000200 /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		000000000210 /* AssetLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetLibrary.swift; sourceTree = "<group>"; };
+		000000000220 /* ImageAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
+		000000000230 /* PrecompAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrecompAsset.swift; sourceTree = "<group>"; };
+		000000000250 /* KeyedDecodingContainerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerExtensions.swift; sourceTree = "<group>"; };
+		000000000270 /* Keyframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Keyframe.swift; sourceTree = "<group>"; };
+		000000000280 /* KeyframeGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyframeGroup.swift; sourceTree = "<group>"; };
+		0000000002A0 /* ImageLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageLayerModel.swift; sourceTree = "<group>"; };
+		0000000002B0 /* LayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerModel.swift; sourceTree = "<group>"; };
+		0000000002C0 /* PreCompLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreCompLayerModel.swift; sourceTree = "<group>"; };
+		0000000002D0 /* ShapeLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeLayerModel.swift; sourceTree = "<group>"; };
+		0000000002E0 /* SolidLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SolidLayerModel.swift; sourceTree = "<group>"; };
+		0000000002F0 /* TextLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextLayerModel.swift; sourceTree = "<group>"; };
+		000000000310 /* DashPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashPattern.swift; sourceTree = "<group>"; };
+		000000000320 /* Marker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		000000000330 /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
+		000000000340 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		000000000360 /* Ellipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
+		000000000370 /* FillI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FillI.swift; sourceTree = "<group>"; };
+		000000000380 /* GradientFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientFill.swift; sourceTree = "<group>"; };
+		000000000390 /* GradientStroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientStroke.swift; sourceTree = "<group>"; };
+		0000000003A0 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		0000000003B0 /* Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
+		0000000003C0 /* Rectangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		0000000003D0 /* Repeater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Repeater.swift; sourceTree = "<group>"; };
+		0000000003E0 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		0000000003F0 /* ShapeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeItem.swift; sourceTree = "<group>"; };
+		000000000400 /* ShapeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeTransform.swift; sourceTree = "<group>"; };
+		000000000410 /* Star.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		000000000420 /* Stroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		000000000430 /* Trim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Trim.swift; sourceTree = "<group>"; };
+		000000000450 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		000000000460 /* Glyph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Glyph.swift; sourceTree = "<group>"; };
+		000000000470 /* TextAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextAnimator.swift; sourceTree = "<group>"; };
+		000000000480 /* TextDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextDocument.swift; sourceTree = "<group>"; };
+		0000000004B0 /* ItemsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItemsExtension.swift; sourceTree = "<group>"; };
+		0000000004D0 /* NodeProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NodeProperty.swift; sourceTree = "<group>"; };
+		0000000004F0 /* AnyNodeProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyNodeProperty.swift; sourceTree = "<group>"; };
+		000000000500 /* AnyValueContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyValueContainer.swift; sourceTree = "<group>"; };
+		000000000510 /* KeypathSearchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeypathSearchable.swift; sourceTree = "<group>"; };
+		000000000520 /* NodePropertyMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NodePropertyMap.swift; sourceTree = "<group>"; };
+		000000000530 /* ValueContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValueContainer.swift; sourceTree = "<group>"; };
+		000000000550 /* GroupInterpolator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GroupInterpolator.swift; sourceTree = "<group>"; };
+		000000000560 /* KeyframeInterpolator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyframeInterpolator.swift; sourceTree = "<group>"; };
+		000000000570 /* SingleValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SingleValueProvider.swift; sourceTree = "<group>"; };
+		0000000005A0 /* TrimPathNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrimPathNode.swift; sourceTree = "<group>"; };
+		0000000005C0 /* GroupOutputNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GroupOutputNode.swift; sourceTree = "<group>"; };
+		0000000005D0 /* PassThroughOutputNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PassThroughOutputNode.swift; sourceTree = "<group>"; };
+		0000000005E0 /* PathOutputNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PathOutputNode.swift; sourceTree = "<group>"; };
+		000000000600 /* FillRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FillRenderer.swift; sourceTree = "<group>"; };
+		000000000610 /* GradientFillRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientFillRenderer.swift; sourceTree = "<group>"; };
+		000000000620 /* GradientStrokeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientStrokeRenderer.swift; sourceTree = "<group>"; };
+		000000000630 /* StrokeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeRenderer.swift; sourceTree = "<group>"; };
+		000000000650 /* EllipseNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EllipseNode.swift; sourceTree = "<group>"; };
+		000000000660 /* PolygonNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PolygonNode.swift; sourceTree = "<group>"; };
+		000000000670 /* RectNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RectNode.swift; sourceTree = "<group>"; };
+		000000000680 /* ShapeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeNode.swift; sourceTree = "<group>"; };
+		000000000690 /* StarNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
+		0000000006B0 /* GroupNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GroupNode.swift; sourceTree = "<group>"; };
+		0000000006D0 /* FillNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FillNode.swift; sourceTree = "<group>"; };
+		0000000006E0 /* GradientFillNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientFillNode.swift; sourceTree = "<group>"; };
+		0000000006F0 /* GradientStrokeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientStrokeNode.swift; sourceTree = "<group>"; };
+		000000000700 /* StrokeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StrokeNode.swift; sourceTree = "<group>"; };
+		000000000720 /* TextAnimatorNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextAnimatorNode.swift; sourceTree = "<group>"; };
+		000000000740 /* AnimatorNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatorNode.swift; sourceTree = "<group>"; };
+		000000000750 /* PathNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PathNode.swift; sourceTree = "<group>"; };
+		000000000760 /* RenderNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RenderNode.swift; sourceTree = "<group>"; };
+		000000000780 /* ShapeContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeContainerLayer.swift; sourceTree = "<group>"; };
+		000000000790 /* ShapeRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShapeRenderLayer.swift; sourceTree = "<group>"; };
+		0000000007C0 /* AnimatorNodeDebugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatorNodeDebugging.swift; sourceTree = "<group>"; };
+		0000000007D0 /* LayerDebugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerDebugging.swift; sourceTree = "<group>"; };
+		0000000007F0 /* AnimationKeypathExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationKeypathExtension.swift; sourceTree = "<group>"; };
+		000000000800 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		000000000810 /* MathKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MathKit.swift; sourceTree = "<group>"; };
+		000000000820 /* StringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		000000000840 /* AnimationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationContext.swift; sourceTree = "<group>"; };
+		000000000860 /* Interpolatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Interpolatable.swift; sourceTree = "<group>"; };
+		000000000870 /* InterpolatableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterpolatableExtensions.swift; sourceTree = "<group>"; };
+		000000000880 /* KeyframeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyframeExtensions.swift; sourceTree = "<group>"; };
+		0000000008A0 /* BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BezierPath.swift; sourceTree = "<group>"; };
+		0000000008B0 /* ColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0000000008C0 /* CompoundBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CompoundBezierPath.swift; sourceTree = "<group>"; };
+		0000000008D0 /* CurveVertex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurveVertex.swift; sourceTree = "<group>"; };
+		0000000008E0 /* PathElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PathElement.swift; sourceTree = "<group>"; };
+		0000000008F0 /* VectorsExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VectorsExtensions.swift; sourceTree = "<group>"; };
+		000000000920 /* AnimationPublic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationPublic.swift; sourceTree = "<group>"; };
+		000000000930 /* AnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		000000000940 /* AnimationViewInitializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationViewInitializers.swift; sourceTree = "<group>"; };
+		000000000960 /* AnimationCacheProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationCacheProvider.swift; sourceTree = "<group>"; };
+		000000000970 /* LRUAnimationCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LRUAnimationCache.swift; sourceTree = "<group>"; };
+		000000000990 /* AnimationKeypath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationKeypath.swift; sourceTree = "<group>"; };
+		0000000009A0 /* AnyValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyValueProvider.swift; sourceTree = "<group>"; };
+		0000000009C0 /* ColorValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorValueProvider.swift; sourceTree = "<group>"; };
+		0000000009D0 /* FloatValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatValueProvider.swift; sourceTree = "<group>"; };
+		0000000009E0 /* PointValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PointValueProvider.swift; sourceTree = "<group>"; };
+		0000000009F0 /* SizeValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SizeValueProvider.swift; sourceTree = "<group>"; };
+		000000000A10 /* AnimationImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationImageProvider.swift; sourceTree = "<group>"; };
+		000000000A30 /* AnimationSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationSubview.swift; sourceTree = "<group>"; };
+		000000000A40 /* BundleImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleImageProvider.swift; sourceTree = "<group>"; };
+		000000000A50 /* FilepathImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilepathImageProvider.swift; sourceTree = "<group>"; };
+		000000000A60 /* LottieView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		000000000A80 /* AnimationTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationTime.swift; sourceTree = "<group>"; };
+		000000000A90 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		000000000AA0 /* Vectors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vectors.swift; sourceTree = "<group>"; };
+		000000000AC0 /* AnimatedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
+		000000000AD0 /* AnimatedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedControl.swift; sourceTree = "<group>"; };
+		000000000AE0 /* AnimatedSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedSwitch.swift; sourceTree = "<group>"; };
+		000000000AF0 /* AnimationSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationSubview.swift; sourceTree = "<group>"; };
+		000000000B00 /* BundleImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleImageProvider.swift; sourceTree = "<group>"; };
+		000000000B20 /* CompatibleAnimationKeypath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CompatibleAnimationKeypath.swift; sourceTree = "<group>"; };
+		000000000B30 /* CompatibleAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CompatibleAnimationView.swift; sourceTree = "<group>"; };
+		000000000B40 /* FilepathImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilepathImageProvider.swift; sourceTree = "<group>"; };
+		000000000B50 /* LottieView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		000000000B60 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		000000000B80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		000000000B90 /* lottie-ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "lottie-ios.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		000000000BE0 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lottie.framework; path = "lottie-ios-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000C40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		000000001430 /* lottie-ios-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios-iOS.xcconfig"; sourceTree = "<group>"; };
+		000000001440 /* lottie-ios-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "lottie-ios-iOS.modulemap"; sourceTree = "<group>"; };
+		000000001450 /* lottie-ios-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-iOS-umbrella.h"; sourceTree = "<group>"; };
+		000000001470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000001480 /* lottie-ios-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-iOS-prefix.pch"; sourceTree = "<group>"; };
+		000000001490 /* lottie-ios-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-iOS-dummy.m"; sourceTree = "<group>"; };
+		0000000014F0 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lottie.framework; path = "lottie-ios-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000001550 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		000000001CD0 /* lottie-ios-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "lottie-ios-macOS.xcconfig"; path = "../lottie-ios-macOS/lottie-ios-macOS.xcconfig"; sourceTree = "<group>"; };
+		000000001CE0 /* lottie-ios-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "lottie-ios-macOS.modulemap"; path = "../lottie-ios-macOS/lottie-ios-macOS.modulemap"; sourceTree = "<group>"; };
+		000000001CF0 /* lottie-ios-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "lottie-ios-macOS-umbrella.h"; path = "../lottie-ios-macOS/lottie-ios-macOS-umbrella.h"; sourceTree = "<group>"; };
+		000000001D10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../lottie-ios-macOS/Info.plist"; sourceTree = "<group>"; };
+		000000001D20 /* lottie-ios-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "lottie-ios-macOS-prefix.pch"; path = "../lottie-ios-macOS/lottie-ios-macOS-prefix.pch"; sourceTree = "<group>"; };
+		000000001D30 /* lottie-ios-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "lottie-ios-macOS-dummy.m"; path = "../lottie-ios-macOS/lottie-ios-macOS-dummy.m"; sourceTree = "<group>"; };
+		000000001D90 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lottie.framework; path = "lottie-ios-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000001DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0000000025D0 /* lottie-ios-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "lottie-ios-tvOS.xcconfig"; path = "../lottie-ios-tvOS/lottie-ios-tvOS.xcconfig"; sourceTree = "<group>"; };
+		0000000025E0 /* lottie-ios-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "lottie-ios-tvOS.modulemap"; path = "../lottie-ios-tvOS/lottie-ios-tvOS.modulemap"; sourceTree = "<group>"; };
+		0000000025F0 /* lottie-ios-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "lottie-ios-tvOS-umbrella.h"; path = "../lottie-ios-tvOS/lottie-ios-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		000000002610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../lottie-ios-tvOS/Info.plist"; sourceTree = "<group>"; };
+		000000002620 /* lottie-ios-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "lottie-ios-tvOS-prefix.pch"; path = "../lottie-ios-tvOS/lottie-ios-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		000000002630 /* lottie-ios-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "lottie-ios-tvOS-dummy.m"; path = "../lottie-ios-tvOS/lottie-ios-tvOS-dummy.m"; sourceTree = "<group>"; };
+		000000002690 /* Pods_lottie_swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_lottie_swift_Example.framework; path = "Pods-lottie-swift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002700 /* Pods-lottie-swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		000000002710 /* Pods-lottie-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		000000002720 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000002730 /* Pods-lottie-swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-lottie-swift_Example.modulemap"; sourceTree = "<group>"; };
+		000000002740 /* Pods-lottie-swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lottie-swift_Example-umbrella.h"; sourceTree = "<group>"; };
+		000000002760 /* Pods-lottie-swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		000000002770 /* Pods-lottie-swift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_Example-resources.sh"; sourceTree = "<group>"; };
+		000000002780 /* Pods-lottie-swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lottie-swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000002790 /* Pods-lottie-swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lottie-swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0000000027A0 /* Pods-lottie-swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lottie-swift_Example-dummy.m"; sourceTree = "<group>"; };
+		000000002800 /* Pods_lottie_swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_lottie_swift_Tests.framework; path = "Pods-lottie-swift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002870 /* Pods-lottie-swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		000000002880 /* Pods-lottie-swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		000000002890 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0000000028A0 /* Pods-lottie-swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-lottie-swift_Tests.modulemap"; sourceTree = "<group>"; };
+		0000000028B0 /* Pods-lottie-swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lottie-swift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0000000028D0 /* Pods-lottie-swift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0000000028E0 /* Pods-lottie-swift_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_Tests-resources.sh"; sourceTree = "<group>"; };
+		0000000028F0 /* Pods-lottie-swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lottie-swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000002900 /* Pods-lottie-swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lottie-swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000002910 /* Pods-lottie-swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lottie-swift_Tests-dummy.m"; sourceTree = "<group>"; };
+		000000002970 /* Pods_lottie_swift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_lottie_swift_macOS.framework; path = "Pods-lottie-swift_macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000029E0 /* Pods-lottie-swift_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		0000000029F0 /* Pods-lottie-swift_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		000000002A00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000002A10 /* Pods-lottie-swift_macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-lottie-swift_macOS.modulemap"; sourceTree = "<group>"; };
+		000000002A20 /* Pods-lottie-swift_macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lottie-swift_macOS-umbrella.h"; sourceTree = "<group>"; };
+		000000002A40 /* Pods-lottie-swift_macOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_macOS-frameworks.sh"; sourceTree = "<group>"; };
+		000000002A50 /* Pods-lottie-swift_macOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_macOS-resources.sh"; sourceTree = "<group>"; };
+		000000002A60 /* Pods-lottie-swift_macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lottie-swift_macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000002A70 /* Pods-lottie-swift_macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lottie-swift_macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000002A80 /* Pods-lottie-swift_macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lottie-swift_macOS-dummy.m"; sourceTree = "<group>"; };
+		000000002AE0 /* Pods_lottie_swift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_lottie_swift_tvOS.framework; path = "Pods-lottie-swift_tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002B50 /* Pods-lottie-swift_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		000000002B60 /* Pods-lottie-swift_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lottie-swift_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		000000002B70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000002B80 /* Pods-lottie-swift_tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-lottie-swift_tvOS.modulemap"; sourceTree = "<group>"; };
+		000000002B90 /* Pods-lottie-swift_tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lottie-swift_tvOS-umbrella.h"; sourceTree = "<group>"; };
+		000000002BB0 /* Pods-lottie-swift_tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		000000002BC0 /* Pods-lottie-swift_tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lottie-swift_tvOS-resources.sh"; sourceTree = "<group>"; };
+		000000002BD0 /* Pods-lottie-swift_tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lottie-swift_tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000002BE0 /* Pods-lottie-swift_tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lottie-swift_tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000002BF0 /* Pods-lottie-swift_tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lottie-swift_tvOS-dummy.m"; sourceTree = "<group>"; };
+		000000002C10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		000000002C30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		000000002C50 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		000000002C70 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		000000002C90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		000000002CB0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		000000002CD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		000000002CF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		000000002D10 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002C40 /* CoreGraphics.framework in Frameworks */,
+				000000000C50 /* Foundation.framework in Frameworks */,
+				000000002C60 /* QuartzCore.framework in Frameworks */,
+				000000002C20 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002C80 /* AppKit.framework in Frameworks */,
+				000000001560 /* Cocoa.framework in Frameworks */,
+				000000002CA0 /* CoreGraphics.framework in Frameworks */,
+				000000002CC0 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002D00 /* CoreGraphics.framework in Frameworks */,
+				000000001E00 /* Foundation.framework in Frameworks */,
+				000000002D20 /* QuartzCore.framework in Frameworks */,
+				000000002CE0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000026C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000026E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002850 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000029A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000029C0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002B30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000010 = {
+			isa = PBXGroup;
+			children = (
+				0000000000B0 /* Podfile */,
+				000000000090 /* Development Pods */,
+				000000000060 /* Frameworks */,
+				000000000020 /* Products */,
+				000000000070 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000BE0 /* Lottie.framework */,
+				0000000014F0 /* Lottie.framework */,
+				000000001D90 /* Lottie.framework */,
+				000000002690 /* Pods_lottie_swift_Example.framework */,
+				000000002970 /* Pods_lottie_swift_macOS.framework */,
+				000000002800 /* Pods_lottie_swift_Tests.framework */,
+				000000002AE0 /* Pods_lottie_swift_tvOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000000000C30 /* iOS */,
+				000000001540 /* OS X */,
+				000000001DE0 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000070 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0000000026F0 /* Pods-lottie-swift_Example */,
+				0000000029D0 /* Pods-lottie-swift_macOS */,
+				000000002860 /* Pods-lottie-swift_Tests */,
+				000000002B40 /* Pods-lottie-swift_tvOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		000000000090 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000A0 /* lottie-ios */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		0000000000A0 /* lottie-ios */ = {
+			isa = PBXGroup;
+			children = (
+				000000000B70 /* Pod */,
+				0000000000C0 /* Private */,
+				000000000900 /* Public */,
+				000000001420 /* Support Files */,
+			);
+			name = "lottie-ios";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		0000000000C0 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000D0 /* LayerContainers */,
+				0000000001D0 /* Model */,
+				000000000490 /* NodeRenderSystem */,
+				0000000007A0 /* Utility */,
+			);
+			name = Private;
+			path = "lottie-swift/src/Private";
+			sourceTree = "<group>";
+		};
+		0000000000D0 /* LayerContainers */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000E0 /* AnimationContainer.swift */,
+				0000000000F0 /* CompLayers */,
+				000000000180 /* Utility */,
+			);
+			name = LayerContainers;
+			path = LayerContainers;
+			sourceTree = "<group>";
+		};
+		0000000000F0 /* CompLayers */ = {
+			isa = PBXGroup;
+			children = (
+				000000000100 /* CompositionLayer.swift */,
+				000000000110 /* ImageCompositionLayer.swift */,
+				000000000120 /* MaskContainerLayer.swift */,
+				000000000130 /* NullCompositionLayer.swift */,
+				000000000140 /* PreCompositionLayer.swift */,
+				000000000150 /* ShapeCompositionLayer.swift */,
+				000000000160 /* SolidCompositionLayer.swift */,
+				000000000170 /* TextCompositionLayer.swift */,
+			);
+			name = CompLayers;
+			path = CompLayers;
+			sourceTree = "<group>";
+		};
+		000000000180 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				000000000190 /* CompositionLayersInitializer.swift */,
+				0000000001A0 /* InvertedMatteLayer.swift */,
+				0000000001B0 /* LayerImageProvider.swift */,
+				0000000001C0 /* LayerTransformNode.swift */,
+			);
+			name = Utility;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0000000001D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0000000001E0 /* Animation.swift */,
+				0000000001F0 /* Assets */,
+				000000000240 /* Extensions */,
+				000000000260 /* Keyframes */,
+				000000000290 /* Layers */,
+				000000000300 /* Objects */,
+				000000000350 /* ShapeItems */,
+				000000000440 /* Text */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0000000001F0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				000000000200 /* Asset.swift */,
+				000000000210 /* AssetLibrary.swift */,
+				000000000220 /* ImageAsset.swift */,
+				000000000230 /* PrecompAsset.swift */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		000000000240 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				000000000250 /* KeyedDecodingContainerExtensions.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		000000000260 /* Keyframes */ = {
+			isa = PBXGroup;
+			children = (
+				000000000270 /* Keyframe.swift */,
+				000000000280 /* KeyframeGroup.swift */,
+			);
+			name = Keyframes;
+			path = Keyframes;
+			sourceTree = "<group>";
+		};
+		000000000290 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				0000000002A0 /* ImageLayerModel.swift */,
+				0000000002B0 /* LayerModel.swift */,
+				0000000002C0 /* PreCompLayerModel.swift */,
+				0000000002D0 /* ShapeLayerModel.swift */,
+				0000000002E0 /* SolidLayerModel.swift */,
+				0000000002F0 /* TextLayerModel.swift */,
+			);
+			name = Layers;
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		000000000300 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				000000000310 /* DashPattern.swift */,
+				000000000320 /* Marker.swift */,
+				000000000330 /* Mask.swift */,
+				000000000340 /* Transform.swift */,
+			);
+			name = Objects;
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		000000000350 /* ShapeItems */ = {
+			isa = PBXGroup;
+			children = (
+				000000000360 /* Ellipse.swift */,
+				000000000370 /* FillI.swift */,
+				000000000380 /* GradientFill.swift */,
+				000000000390 /* GradientStroke.swift */,
+				0000000003A0 /* Group.swift */,
+				0000000003B0 /* Merge.swift */,
+				0000000003C0 /* Rectangle.swift */,
+				0000000003D0 /* Repeater.swift */,
+				0000000003E0 /* Shape.swift */,
+				0000000003F0 /* ShapeItem.swift */,
+				000000000400 /* ShapeTransform.swift */,
+				000000000410 /* Star.swift */,
+				000000000420 /* Stroke.swift */,
+				000000000430 /* Trim.swift */,
+			);
+			name = ShapeItems;
+			path = ShapeItems;
+			sourceTree = "<group>";
+		};
+		000000000440 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				000000000450 /* Font.swift */,
+				000000000460 /* Glyph.swift */,
+				000000000470 /* TextAnimator.swift */,
+				000000000480 /* TextDocument.swift */,
+			);
+			name = Text;
+			path = Text;
+			sourceTree = "<group>";
+		};
+		000000000490 /* NodeRenderSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0000000004A0 /* Extensions */,
+				0000000004C0 /* NodeProperties */,
+				000000000580 /* Nodes */,
+				000000000730 /* Protocols */,
+				000000000770 /* RenderLayers */,
+			);
+			name = NodeRenderSystem;
+			path = NodeRenderSystem;
+			sourceTree = "<group>";
+		};
+		0000000004A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0000000004B0 /* ItemsExtension.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0000000004C0 /* NodeProperties */ = {
+			isa = PBXGroup;
+			children = (
+				0000000004D0 /* NodeProperty.swift */,
+				000000000530 /* ValueContainer.swift */,
+				0000000004E0 /* Protocols */,
+				000000000540 /* ValueProviders */,
+			);
+			name = NodeProperties;
+			path = NodeProperties;
+			sourceTree = "<group>";
+		};
+		0000000004E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0000000004F0 /* AnyNodeProperty.swift */,
+				000000000500 /* AnyValueContainer.swift */,
+				000000000510 /* KeypathSearchable.swift */,
+				000000000520 /* NodePropertyMap.swift */,
+			);
+			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		000000000540 /* ValueProviders */ = {
+			isa = PBXGroup;
+			children = (
+				000000000550 /* GroupInterpolator.swift */,
+				000000000560 /* KeyframeInterpolator.swift */,
+				000000000570 /* SingleValueProvider.swift */,
+			);
+			name = ValueProviders;
+			path = ValueProviders;
+			sourceTree = "<group>";
+		};
+		000000000580 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				000000000590 /* ModifierNodes */,
+				0000000005B0 /* OutputNodes */,
+				000000000640 /* PathNodes */,
+				0000000006A0 /* RenderContainers */,
+				0000000006C0 /* RenderNodes */,
+				000000000710 /* Text */,
+			);
+			name = Nodes;
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		000000000590 /* ModifierNodes */ = {
+			isa = PBXGroup;
+			children = (
+				0000000005A0 /* TrimPathNode.swift */,
+			);
+			name = ModifierNodes;
+			path = ModifierNodes;
+			sourceTree = "<group>";
+		};
+		0000000005B0 /* OutputNodes */ = {
+			isa = PBXGroup;
+			children = (
+				0000000005C0 /* GroupOutputNode.swift */,
+				0000000005D0 /* PassThroughOutputNode.swift */,
+				0000000005E0 /* PathOutputNode.swift */,
+				0000000005F0 /* Renderables */,
+			);
+			name = OutputNodes;
+			path = OutputNodes;
+			sourceTree = "<group>";
+		};
+		0000000005F0 /* Renderables */ = {
+			isa = PBXGroup;
+			children = (
+				000000000600 /* FillRenderer.swift */,
+				000000000610 /* GradientFillRenderer.swift */,
+				000000000620 /* GradientStrokeRenderer.swift */,
+				000000000630 /* StrokeRenderer.swift */,
+			);
+			name = Renderables;
+			path = Renderables;
+			sourceTree = "<group>";
+		};
+		000000000640 /* PathNodes */ = {
+			isa = PBXGroup;
+			children = (
+				000000000650 /* EllipseNode.swift */,
+				000000000660 /* PolygonNode.swift */,
+				000000000670 /* RectNode.swift */,
+				000000000680 /* ShapeNode.swift */,
+				000000000690 /* StarNode.swift */,
+			);
+			name = PathNodes;
+			path = PathNodes;
+			sourceTree = "<group>";
+		};
+		0000000006A0 /* RenderContainers */ = {
+			isa = PBXGroup;
+			children = (
+				0000000006B0 /* GroupNode.swift */,
+			);
+			name = RenderContainers;
+			path = RenderContainers;
+			sourceTree = "<group>";
+		};
+		0000000006C0 /* RenderNodes */ = {
+			isa = PBXGroup;
+			children = (
+				0000000006D0 /* FillNode.swift */,
+				0000000006E0 /* GradientFillNode.swift */,
+				0000000006F0 /* GradientStrokeNode.swift */,
+				000000000700 /* StrokeNode.swift */,
+			);
+			name = RenderNodes;
+			path = RenderNodes;
+			sourceTree = "<group>";
+		};
+		000000000710 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				000000000720 /* TextAnimatorNode.swift */,
+			);
+			name = Text;
+			path = Text;
+			sourceTree = "<group>";
+		};
+		000000000730 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				000000000740 /* AnimatorNode.swift */,
+				000000000750 /* PathNode.swift */,
+				000000000760 /* RenderNode.swift */,
+			);
+			name = Protocols;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		000000000770 /* RenderLayers */ = {
+			isa = PBXGroup;
+			children = (
+				000000000780 /* ShapeContainerLayer.swift */,
+				000000000790 /* ShapeRenderLayer.swift */,
+			);
+			name = RenderLayers;
+			path = RenderLayers;
+			sourceTree = "<group>";
+		};
+		0000000007A0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0000000007B0 /* Debugging */,
+				0000000007E0 /* Extensions */,
+				000000000830 /* Helpers */,
+				000000000850 /* Interpolatable */,
+				000000000890 /* Primitives */,
+			);
+			name = Utility;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0000000007B0 /* Debugging */ = {
+			isa = PBXGroup;
+			children = (
+				0000000007C0 /* AnimatorNodeDebugging.swift */,
+				0000000007D0 /* LayerDebugging.swift */,
+			);
+			name = Debugging;
+			path = Debugging;
+			sourceTree = "<group>";
+		};
+		0000000007E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0000000007F0 /* AnimationKeypathExtension.swift */,
+				000000000800 /* CGFloatExtensions.swift */,
+				000000000810 /* MathKit.swift */,
+				000000000820 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		000000000830 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				000000000840 /* AnimationContext.swift */,
+			);
+			name = Helpers;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		000000000850 /* Interpolatable */ = {
+			isa = PBXGroup;
+			children = (
+				000000000860 /* Interpolatable.swift */,
+				000000000870 /* InterpolatableExtensions.swift */,
+				000000000880 /* KeyframeExtensions.swift */,
+			);
+			name = Interpolatable;
+			path = Interpolatable;
+			sourceTree = "<group>";
+		};
+		000000000890 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				0000000008A0 /* BezierPath.swift */,
+				0000000008B0 /* ColorExtension.swift */,
+				0000000008C0 /* CompoundBezierPath.swift */,
+				0000000008D0 /* CurveVertex.swift */,
+				0000000008E0 /* PathElement.swift */,
+				0000000008F0 /* VectorsExtensions.swift */,
+			);
+			name = Primitives;
+			path = Primitives;
+			sourceTree = "<group>";
+		};
+		000000000900 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				000000000910 /* Animation */,
+				000000000950 /* AnimationCache */,
+				000000000980 /* DynamicProperties */,
+				000000000A00 /* ImageProvider */,
+				000000000AB0 /* iOS */,
+				000000000A20 /* MacOS */,
+				000000000A70 /* Primitives */,
+			);
+			name = Public;
+			path = "lottie-swift/src/Public";
+			sourceTree = "<group>";
+		};
+		000000000910 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				000000000920 /* AnimationPublic.swift */,
+				000000000930 /* AnimationView.swift */,
+				000000000940 /* AnimationViewInitializers.swift */,
+			);
+			name = Animation;
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		000000000950 /* AnimationCache */ = {
+			isa = PBXGroup;
+			children = (
+				000000000960 /* AnimationCacheProvider.swift */,
+				000000000970 /* LRUAnimationCache.swift */,
+			);
+			name = AnimationCache;
+			path = AnimationCache;
+			sourceTree = "<group>";
+		};
+		000000000980 /* DynamicProperties */ = {
+			isa = PBXGroup;
+			children = (
+				000000000990 /* AnimationKeypath.swift */,
+				0000000009A0 /* AnyValueProvider.swift */,
+				0000000009B0 /* ValueProviders */,
+			);
+			name = DynamicProperties;
+			path = DynamicProperties;
+			sourceTree = "<group>";
+		};
+		0000000009B0 /* ValueProviders */ = {
+			isa = PBXGroup;
+			children = (
+				0000000009C0 /* ColorValueProvider.swift */,
+				0000000009D0 /* FloatValueProvider.swift */,
+				0000000009E0 /* PointValueProvider.swift */,
+				0000000009F0 /* SizeValueProvider.swift */,
+			);
+			name = ValueProviders;
+			path = ValueProviders;
+			sourceTree = "<group>";
+		};
+		000000000A00 /* ImageProvider */ = {
+			isa = PBXGroup;
+			children = (
+				000000000A10 /* AnimationImageProvider.swift */,
+			);
+			name = ImageProvider;
+			path = ImageProvider;
+			sourceTree = "<group>";
+		};
+		000000000A20 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000000A30 /* AnimationSubview.swift */,
+				000000000A40 /* BundleImageProvider.swift */,
+				000000000A50 /* FilepathImageProvider.swift */,
+				000000000A60 /* LottieView.swift */,
+			);
+			name = MacOS;
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		000000000A70 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				000000000A80 /* AnimationTime.swift */,
+				000000000A90 /* Color.swift */,
+				000000000AA0 /* Vectors.swift */,
+			);
+			name = Primitives;
+			path = Primitives;
+			sourceTree = "<group>";
+		};
+		000000000AB0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000000AC0 /* AnimatedButton.swift */,
+				000000000AD0 /* AnimatedControl.swift */,
+				000000000AE0 /* AnimatedSwitch.swift */,
+				000000000AF0 /* AnimationSubview.swift */,
+				000000000B00 /* BundleImageProvider.swift */,
+				000000000B40 /* FilepathImageProvider.swift */,
+				000000000B50 /* LottieView.swift */,
+				000000000B60 /* UIColorExtension.swift */,
+				000000000B10 /* Compatibility */,
+			);
+			name = iOS;
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		000000000B10 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				000000000B20 /* CompatibleAnimationKeypath.swift */,
+				000000000B30 /* CompatibleAnimationView.swift */,
+			);
+			name = Compatibility;
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		000000000B70 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				000000000B80 /* LICENSE */,
+				000000000B90 /* lottie-ios.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		000000000C30 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000002C30 /* CoreGraphics.framework */,
+				000000000C40 /* Foundation.framework */,
+				000000002C50 /* QuartzCore.framework */,
+				000000002C10 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		000000001420 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000001D10 /* Info.plist */,
+				000000002610 /* Info.plist */,
+				000000001470 /* Info.plist */,
+				000000001440 /* lottie-ios-iOS.modulemap */,
+				000000001430 /* lottie-ios-iOS.xcconfig */,
+				000000001490 /* lottie-ios-iOS-dummy.m */,
+				000000001480 /* lottie-ios-iOS-prefix.pch */,
+				000000001450 /* lottie-ios-iOS-umbrella.h */,
+				000000001CE0 /* lottie-ios-macOS.modulemap */,
+				000000001CD0 /* lottie-ios-macOS.xcconfig */,
+				000000001D30 /* lottie-ios-macOS-dummy.m */,
+				000000001D20 /* lottie-ios-macOS-prefix.pch */,
+				000000001CF0 /* lottie-ios-macOS-umbrella.h */,
+				0000000025E0 /* lottie-ios-tvOS.modulemap */,
+				0000000025D0 /* lottie-ios-tvOS.xcconfig */,
+				000000002630 /* lottie-ios-tvOS-dummy.m */,
+				000000002620 /* lottie-ios-tvOS-prefix.pch */,
+				0000000025F0 /* lottie-ios-tvOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/lottie-ios-iOS";
+			sourceTree = "<group>";
+		};
+		000000001540 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				000000002C70 /* AppKit.framework */,
+				000000001550 /* Cocoa.framework */,
+				000000002C90 /* CoreGraphics.framework */,
+				000000002CB0 /* QuartzCore.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		000000001DE0 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000002CF0 /* CoreGraphics.framework */,
+				000000001DF0 /* Foundation.framework */,
+				000000002D10 /* QuartzCore.framework */,
+				000000002CD0 /* UIKit.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		0000000026F0 /* Pods-lottie-swift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				000000002720 /* Info.plist */,
+				000000002730 /* Pods-lottie-swift_Example.modulemap */,
+				000000002790 /* Pods-lottie-swift_Example-acknowledgements.markdown */,
+				000000002780 /* Pods-lottie-swift_Example-acknowledgements.plist */,
+				0000000027A0 /* Pods-lottie-swift_Example-dummy.m */,
+				000000002760 /* Pods-lottie-swift_Example-frameworks.sh */,
+				000000002770 /* Pods-lottie-swift_Example-resources.sh */,
+				000000002740 /* Pods-lottie-swift_Example-umbrella.h */,
+				000000002710 /* Pods-lottie-swift_Example.debug.xcconfig */,
+				000000002700 /* Pods-lottie-swift_Example.release.xcconfig */,
+			);
+			name = "Pods-lottie-swift_Example";
+			path = "Target Support Files/Pods-lottie-swift_Example";
+			sourceTree = "<group>";
+		};
+		000000002860 /* Pods-lottie-swift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				000000002890 /* Info.plist */,
+				0000000028A0 /* Pods-lottie-swift_Tests.modulemap */,
+				000000002900 /* Pods-lottie-swift_Tests-acknowledgements.markdown */,
+				0000000028F0 /* Pods-lottie-swift_Tests-acknowledgements.plist */,
+				000000002910 /* Pods-lottie-swift_Tests-dummy.m */,
+				0000000028D0 /* Pods-lottie-swift_Tests-frameworks.sh */,
+				0000000028E0 /* Pods-lottie-swift_Tests-resources.sh */,
+				0000000028B0 /* Pods-lottie-swift_Tests-umbrella.h */,
+				000000002880 /* Pods-lottie-swift_Tests.debug.xcconfig */,
+				000000002870 /* Pods-lottie-swift_Tests.release.xcconfig */,
+			);
+			name = "Pods-lottie-swift_Tests";
+			path = "Target Support Files/Pods-lottie-swift_Tests";
+			sourceTree = "<group>";
+		};
+		0000000029D0 /* Pods-lottie-swift_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000002A00 /* Info.plist */,
+				000000002A10 /* Pods-lottie-swift_macOS.modulemap */,
+				000000002A70 /* Pods-lottie-swift_macOS-acknowledgements.markdown */,
+				000000002A60 /* Pods-lottie-swift_macOS-acknowledgements.plist */,
+				000000002A80 /* Pods-lottie-swift_macOS-dummy.m */,
+				000000002A40 /* Pods-lottie-swift_macOS-frameworks.sh */,
+				000000002A50 /* Pods-lottie-swift_macOS-resources.sh */,
+				000000002A20 /* Pods-lottie-swift_macOS-umbrella.h */,
+				0000000029F0 /* Pods-lottie-swift_macOS.debug.xcconfig */,
+				0000000029E0 /* Pods-lottie-swift_macOS.release.xcconfig */,
+			);
+			name = "Pods-lottie-swift_macOS";
+			path = "Target Support Files/Pods-lottie-swift_macOS";
+			sourceTree = "<group>";
+		};
+		000000002B40 /* Pods-lottie-swift_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000002B70 /* Info.plist */,
+				000000002B80 /* Pods-lottie-swift_tvOS.modulemap */,
+				000000002BE0 /* Pods-lottie-swift_tvOS-acknowledgements.markdown */,
+				000000002BD0 /* Pods-lottie-swift_tvOS-acknowledgements.plist */,
+				000000002BF0 /* Pods-lottie-swift_tvOS-dummy.m */,
+				000000002BB0 /* Pods-lottie-swift_tvOS-frameworks.sh */,
+				000000002BC0 /* Pods-lottie-swift_tvOS-resources.sh */,
+				000000002B90 /* Pods-lottie-swift_tvOS-umbrella.h */,
+				000000002B60 /* Pods-lottie-swift_tvOS.debug.xcconfig */,
+				000000002B50 /* Pods-lottie-swift_tvOS.release.xcconfig */,
+			);
+			name = "Pods-lottie-swift_tvOS";
+			path = "Target Support Files/Pods-lottie-swift_tvOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		000000000BF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001460 /* lottie-ios-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001500 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001D00 /* lottie-ios-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001DA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002600 /* lottie-ios-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000026A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002750 /* Pods-lottie-swift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002810 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000028C0 /* Pods-lottie-swift_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002980 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002A30 /* Pods-lottie-swift_macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002AF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002BA0 /* Pods-lottie-swift_tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		000000000BA0 /* lottie-ios-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000BB0 /* Build configuration list for PBXNativeTarget "lottie-ios-iOS" */;
+			buildPhases = (
+				000000000BF0 /* Headers */,
+				000000000C00 /* Sources */,
+				000000000C10 /* Frameworks */,
+				000000000C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lottie-ios-iOS";
+			productName = "lottie-ios-iOS";
+			productReference = 000000000BE0 /* Lottie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0000000014B0 /* lottie-ios-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000014C0 /* Build configuration list for PBXNativeTarget "lottie-ios-macOS" */;
+			buildPhases = (
+				000000001500 /* Headers */,
+				000000001510 /* Sources */,
+				000000001520 /* Frameworks */,
+				000000001530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lottie-ios-macOS";
+			productName = "lottie-ios-macOS";
+			productReference = 0000000014F0 /* Lottie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000001D50 /* lottie-ios-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000001D60 /* Build configuration list for PBXNativeTarget "lottie-ios-tvOS" */;
+			buildPhases = (
+				000000001DA0 /* Headers */,
+				000000001DB0 /* Sources */,
+				000000001DC0 /* Frameworks */,
+				000000001DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lottie-ios-tvOS";
+			productName = "lottie-ios-tvOS";
+			productReference = 000000001D90 /* Lottie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000002650 /* Pods-lottie-swift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000002660 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_Example" */;
+			buildPhases = (
+				0000000026A0 /* Headers */,
+				0000000026B0 /* Sources */,
+				0000000026C0 /* Frameworks */,
+				0000000026D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002D80 /* PBXTargetDependency */,
+			);
+			name = "Pods-lottie-swift_Example";
+			productName = "Pods-lottie-swift_Example";
+			productReference = 000000002690 /* Pods_lottie_swift_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0000000027C0 /* Pods-lottie-swift_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000027D0 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_Tests" */;
+			buildPhases = (
+				000000002810 /* Headers */,
+				000000002820 /* Sources */,
+				000000002830 /* Frameworks */,
+				000000002840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002DA0 /* PBXTargetDependency */,
+			);
+			name = "Pods-lottie-swift_Tests";
+			productName = "Pods-lottie-swift_Tests";
+			productReference = 000000002800 /* Pods_lottie_swift_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000002930 /* Pods-lottie-swift_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000002940 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_macOS" */;
+			buildPhases = (
+				000000002980 /* Headers */,
+				000000002990 /* Sources */,
+				0000000029A0 /* Frameworks */,
+				0000000029B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002D40 /* PBXTargetDependency */,
+			);
+			name = "Pods-lottie-swift_macOS";
+			productName = "Pods-lottie-swift_macOS";
+			productReference = 000000002970 /* Pods_lottie_swift_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		000000002AA0 /* Pods-lottie-swift_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000002AB0 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_tvOS" */;
+			buildPhases = (
+				000000002AF0 /* Headers */,
+				000000002B00 /* Sources */,
+				000000002B10 /* Frameworks */,
+				000000002B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002D60 /* PBXTargetDependency */,
+			);
+			name = "Pods-lottie-swift_tvOS";
+			productName = "Pods-lottie-swift_tvOS";
+			productReference = 000000002AE0 /* Pods_lottie_swift_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 000000000030 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000010;
+			productRefGroup = 000000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000BA0 /* lottie-ios-iOS */,
+				0000000014B0 /* lottie-ios-macOS */,
+				000000001D50 /* lottie-ios-tvOS */,
+				000000002650 /* Pods-lottie-swift_Example */,
+				000000002930 /* Pods-lottie-swift_macOS */,
+				0000000027C0 /* Pods-lottie-swift_Tests */,
+				000000002AA0 /* Pods-lottie-swift_tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000026D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000029B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001350 /* AnimatedButton.swift in Sources */,
+				000000001360 /* AnimatedControl.swift in Sources */,
+				000000001370 /* AnimatedSwitch.swift in Sources */,
+				000000000D30 /* Animation.swift in Sources */,
+				0000000012C0 /* AnimationCacheProvider.swift in Sources */,
+				000000000C60 /* AnimationContainer.swift in Sources */,
+				0000000011F0 /* AnimationContext.swift in Sources */,
+				000000001340 /* AnimationImageProvider.swift in Sources */,
+				0000000012E0 /* AnimationKeypath.swift in Sources */,
+				0000000011B0 /* AnimationKeypathExtension.swift in Sources */,
+				000000001290 /* AnimationPublic.swift in Sources */,
+				000000001380 /* AnimationSubview.swift in Sources */,
+				0000000013F0 /* AnimationTime.swift in Sources */,
+				0000000012A0 /* AnimationView.swift in Sources */,
+				0000000012B0 /* AnimationViewInitializers.swift in Sources */,
+				000000001140 /* AnimatorNode.swift in Sources */,
+				000000001190 /* AnimatorNodeDebugging.swift in Sources */,
+				000000000F90 /* AnyNodeProperty.swift in Sources */,
+				000000000FA0 /* AnyValueContainer.swift in Sources */,
+				0000000012F0 /* AnyValueProvider.swift in Sources */,
+				000000000D40 /* Asset.swift in Sources */,
+				000000000D50 /* AssetLibrary.swift in Sources */,
+				000000001230 /* BezierPath.swift in Sources */,
+				000000001390 /* BundleImageProvider.swift in Sources */,
+				0000000011C0 /* CGFloatExtensions.swift in Sources */,
+				000000001400 /* Color.swift in Sources */,
+				000000001240 /* ColorExtension.swift in Sources */,
+				000000001300 /* ColorValueProvider.swift in Sources */,
+				0000000013A0 /* CompatibleAnimationKeypath.swift in Sources */,
+				0000000013B0 /* CompatibleAnimationView.swift in Sources */,
+				000000000C70 /* CompositionLayer.swift in Sources */,
+				000000000CF0 /* CompositionLayersInitializer.swift in Sources */,
+				000000001250 /* CompoundBezierPath.swift in Sources */,
+				000000001260 /* CurveVertex.swift in Sources */,
+				000000000E10 /* DashPattern.swift in Sources */,
+				000000000E50 /* Ellipse.swift in Sources */,
+				000000001090 /* EllipseNode.swift in Sources */,
+				0000000013C0 /* FilepathImageProvider.swift in Sources */,
+				000000000E60 /* FillI.swift in Sources */,
+				0000000010F0 /* FillNode.swift in Sources */,
+				000000001050 /* FillRenderer.swift in Sources */,
+				000000001310 /* FloatValueProvider.swift in Sources */,
+				000000000F30 /* Font.swift in Sources */,
+				000000000F40 /* Glyph.swift in Sources */,
+				000000000E70 /* GradientFill.swift in Sources */,
+				000000001100 /* GradientFillNode.swift in Sources */,
+				000000001060 /* GradientFillRenderer.swift in Sources */,
+				000000000E80 /* GradientStroke.swift in Sources */,
+				000000001110 /* GradientStrokeNode.swift in Sources */,
+				000000001070 /* GradientStrokeRenderer.swift in Sources */,
+				000000000E90 /* Group.swift in Sources */,
+				000000000FE0 /* GroupInterpolator.swift in Sources */,
+				0000000010E0 /* GroupNode.swift in Sources */,
+				000000001020 /* GroupOutputNode.swift in Sources */,
+				000000000D60 /* ImageAsset.swift in Sources */,
+				000000000C80 /* ImageCompositionLayer.swift in Sources */,
+				000000000DB0 /* ImageLayerModel.swift in Sources */,
+				000000001200 /* Interpolatable.swift in Sources */,
+				000000001210 /* InterpolatableExtensions.swift in Sources */,
+				000000000D00 /* InvertedMatteLayer.swift in Sources */,
+				000000000F70 /* ItemsExtension.swift in Sources */,
+				000000000D80 /* KeyedDecodingContainerExtensions.swift in Sources */,
+				000000000D90 /* Keyframe.swift in Sources */,
+				000000001220 /* KeyframeExtensions.swift in Sources */,
+				000000000DA0 /* KeyframeGroup.swift in Sources */,
+				000000000FF0 /* KeyframeInterpolator.swift in Sources */,
+				000000000FB0 /* KeypathSearchable.swift in Sources */,
+				0000000011A0 /* LayerDebugging.swift in Sources */,
+				000000000D10 /* LayerImageProvider.swift in Sources */,
+				000000000DC0 /* LayerModel.swift in Sources */,
+				000000000D20 /* LayerTransformNode.swift in Sources */,
+				0000000014A0 /* lottie-ios-iOS-dummy.m in Sources */,
+				0000000013D0 /* LottieView.swift in Sources */,
+				0000000012D0 /* LRUAnimationCache.swift in Sources */,
+				000000000E20 /* Marker.swift in Sources */,
+				000000000E30 /* Mask.swift in Sources */,
+				000000000C90 /* MaskContainerLayer.swift in Sources */,
+				0000000011D0 /* MathKit.swift in Sources */,
+				000000000EA0 /* Merge.swift in Sources */,
+				000000000F80 /* NodeProperty.swift in Sources */,
+				000000000FC0 /* NodePropertyMap.swift in Sources */,
+				000000000CA0 /* NullCompositionLayer.swift in Sources */,
+				000000001030 /* PassThroughOutputNode.swift in Sources */,
+				000000001270 /* PathElement.swift in Sources */,
+				000000001150 /* PathNode.swift in Sources */,
+				000000001040 /* PathOutputNode.swift in Sources */,
+				000000001320 /* PointValueProvider.swift in Sources */,
+				0000000010A0 /* PolygonNode.swift in Sources */,
+				000000000D70 /* PrecompAsset.swift in Sources */,
+				000000000DD0 /* PreCompLayerModel.swift in Sources */,
+				000000000CB0 /* PreCompositionLayer.swift in Sources */,
+				000000000EB0 /* Rectangle.swift in Sources */,
+				0000000010B0 /* RectNode.swift in Sources */,
+				000000001160 /* RenderNode.swift in Sources */,
+				000000000EC0 /* Repeater.swift in Sources */,
+				000000000ED0 /* Shape.swift in Sources */,
+				000000000CC0 /* ShapeCompositionLayer.swift in Sources */,
+				000000001170 /* ShapeContainerLayer.swift in Sources */,
+				000000000EE0 /* ShapeItem.swift in Sources */,
+				000000000DE0 /* ShapeLayerModel.swift in Sources */,
+				0000000010C0 /* ShapeNode.swift in Sources */,
+				000000001180 /* ShapeRenderLayer.swift in Sources */,
+				000000000EF0 /* ShapeTransform.swift in Sources */,
+				000000001000 /* SingleValueProvider.swift in Sources */,
+				000000001330 /* SizeValueProvider.swift in Sources */,
+				000000000CD0 /* SolidCompositionLayer.swift in Sources */,
+				000000000DF0 /* SolidLayerModel.swift in Sources */,
+				000000000F00 /* Star.swift in Sources */,
+				0000000010D0 /* StarNode.swift in Sources */,
+				0000000011E0 /* StringExtensions.swift in Sources */,
+				000000000F10 /* Stroke.swift in Sources */,
+				000000001120 /* StrokeNode.swift in Sources */,
+				000000001080 /* StrokeRenderer.swift in Sources */,
+				000000000F50 /* TextAnimator.swift in Sources */,
+				000000001130 /* TextAnimatorNode.swift in Sources */,
+				000000000CE0 /* TextCompositionLayer.swift in Sources */,
+				000000000F60 /* TextDocument.swift in Sources */,
+				000000000E00 /* TextLayerModel.swift in Sources */,
+				000000000E40 /* Transform.swift in Sources */,
+				000000000F20 /* Trim.swift in Sources */,
+				000000001010 /* TrimPathNode.swift in Sources */,
+				0000000013E0 /* UIColorExtension.swift in Sources */,
+				000000000FD0 /* ValueContainer.swift in Sources */,
+				000000001410 /* Vectors.swift in Sources */,
+				000000001280 /* VectorsExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001640 /* Animation.swift in Sources */,
+				000000001BD0 /* AnimationCacheProvider.swift in Sources */,
+				000000001570 /* AnimationContainer.swift in Sources */,
+				000000001B00 /* AnimationContext.swift in Sources */,
+				000000001C50 /* AnimationImageProvider.swift in Sources */,
+				000000001BF0 /* AnimationKeypath.swift in Sources */,
+				000000001AC0 /* AnimationKeypathExtension.swift in Sources */,
+				000000001BA0 /* AnimationPublic.swift in Sources */,
+				000000001C60 /* AnimationSubview.swift in Sources */,
+				000000001CA0 /* AnimationTime.swift in Sources */,
+				000000001BB0 /* AnimationView.swift in Sources */,
+				000000001BC0 /* AnimationViewInitializers.swift in Sources */,
+				000000001A50 /* AnimatorNode.swift in Sources */,
+				000000001AA0 /* AnimatorNodeDebugging.swift in Sources */,
+				0000000018A0 /* AnyNodeProperty.swift in Sources */,
+				0000000018B0 /* AnyValueContainer.swift in Sources */,
+				000000001C00 /* AnyValueProvider.swift in Sources */,
+				000000001650 /* Asset.swift in Sources */,
+				000000001660 /* AssetLibrary.swift in Sources */,
+				000000001B40 /* BezierPath.swift in Sources */,
+				000000001C70 /* BundleImageProvider.swift in Sources */,
+				000000001AD0 /* CGFloatExtensions.swift in Sources */,
+				000000001CB0 /* Color.swift in Sources */,
+				000000001B50 /* ColorExtension.swift in Sources */,
+				000000001C10 /* ColorValueProvider.swift in Sources */,
+				000000001580 /* CompositionLayer.swift in Sources */,
+				000000001600 /* CompositionLayersInitializer.swift in Sources */,
+				000000001B60 /* CompoundBezierPath.swift in Sources */,
+				000000001B70 /* CurveVertex.swift in Sources */,
+				000000001720 /* DashPattern.swift in Sources */,
+				000000001760 /* Ellipse.swift in Sources */,
+				0000000019A0 /* EllipseNode.swift in Sources */,
+				000000001C80 /* FilepathImageProvider.swift in Sources */,
+				000000001770 /* FillI.swift in Sources */,
+				000000001A00 /* FillNode.swift in Sources */,
+				000000001960 /* FillRenderer.swift in Sources */,
+				000000001C20 /* FloatValueProvider.swift in Sources */,
+				000000001840 /* Font.swift in Sources */,
+				000000001850 /* Glyph.swift in Sources */,
+				000000001780 /* GradientFill.swift in Sources */,
+				000000001A10 /* GradientFillNode.swift in Sources */,
+				000000001970 /* GradientFillRenderer.swift in Sources */,
+				000000001790 /* GradientStroke.swift in Sources */,
+				000000001A20 /* GradientStrokeNode.swift in Sources */,
+				000000001980 /* GradientStrokeRenderer.swift in Sources */,
+				0000000017A0 /* Group.swift in Sources */,
+				0000000018F0 /* GroupInterpolator.swift in Sources */,
+				0000000019F0 /* GroupNode.swift in Sources */,
+				000000001930 /* GroupOutputNode.swift in Sources */,
+				000000001670 /* ImageAsset.swift in Sources */,
+				000000001590 /* ImageCompositionLayer.swift in Sources */,
+				0000000016C0 /* ImageLayerModel.swift in Sources */,
+				000000001B10 /* Interpolatable.swift in Sources */,
+				000000001B20 /* InterpolatableExtensions.swift in Sources */,
+				000000001610 /* InvertedMatteLayer.swift in Sources */,
+				000000001880 /* ItemsExtension.swift in Sources */,
+				000000001690 /* KeyedDecodingContainerExtensions.swift in Sources */,
+				0000000016A0 /* Keyframe.swift in Sources */,
+				000000001B30 /* KeyframeExtensions.swift in Sources */,
+				0000000016B0 /* KeyframeGroup.swift in Sources */,
+				000000001900 /* KeyframeInterpolator.swift in Sources */,
+				0000000018C0 /* KeypathSearchable.swift in Sources */,
+				000000001AB0 /* LayerDebugging.swift in Sources */,
+				000000001620 /* LayerImageProvider.swift in Sources */,
+				0000000016D0 /* LayerModel.swift in Sources */,
+				000000001630 /* LayerTransformNode.swift in Sources */,
+				000000001D40 /* lottie-ios-macOS-dummy.m in Sources */,
+				000000001C90 /* LottieView.swift in Sources */,
+				000000001BE0 /* LRUAnimationCache.swift in Sources */,
+				000000001730 /* Marker.swift in Sources */,
+				000000001740 /* Mask.swift in Sources */,
+				0000000015A0 /* MaskContainerLayer.swift in Sources */,
+				000000001AE0 /* MathKit.swift in Sources */,
+				0000000017B0 /* Merge.swift in Sources */,
+				000000001890 /* NodeProperty.swift in Sources */,
+				0000000018D0 /* NodePropertyMap.swift in Sources */,
+				0000000015B0 /* NullCompositionLayer.swift in Sources */,
+				000000001940 /* PassThroughOutputNode.swift in Sources */,
+				000000001B80 /* PathElement.swift in Sources */,
+				000000001A60 /* PathNode.swift in Sources */,
+				000000001950 /* PathOutputNode.swift in Sources */,
+				000000001C30 /* PointValueProvider.swift in Sources */,
+				0000000019B0 /* PolygonNode.swift in Sources */,
+				000000001680 /* PrecompAsset.swift in Sources */,
+				0000000016E0 /* PreCompLayerModel.swift in Sources */,
+				0000000015C0 /* PreCompositionLayer.swift in Sources */,
+				0000000017C0 /* Rectangle.swift in Sources */,
+				0000000019C0 /* RectNode.swift in Sources */,
+				000000001A70 /* RenderNode.swift in Sources */,
+				0000000017D0 /* Repeater.swift in Sources */,
+				0000000017E0 /* Shape.swift in Sources */,
+				0000000015D0 /* ShapeCompositionLayer.swift in Sources */,
+				000000001A80 /* ShapeContainerLayer.swift in Sources */,
+				0000000017F0 /* ShapeItem.swift in Sources */,
+				0000000016F0 /* ShapeLayerModel.swift in Sources */,
+				0000000019D0 /* ShapeNode.swift in Sources */,
+				000000001A90 /* ShapeRenderLayer.swift in Sources */,
+				000000001800 /* ShapeTransform.swift in Sources */,
+				000000001910 /* SingleValueProvider.swift in Sources */,
+				000000001C40 /* SizeValueProvider.swift in Sources */,
+				0000000015E0 /* SolidCompositionLayer.swift in Sources */,
+				000000001700 /* SolidLayerModel.swift in Sources */,
+				000000001810 /* Star.swift in Sources */,
+				0000000019E0 /* StarNode.swift in Sources */,
+				000000001AF0 /* StringExtensions.swift in Sources */,
+				000000001820 /* Stroke.swift in Sources */,
+				000000001A30 /* StrokeNode.swift in Sources */,
+				000000001990 /* StrokeRenderer.swift in Sources */,
+				000000001860 /* TextAnimator.swift in Sources */,
+				000000001A40 /* TextAnimatorNode.swift in Sources */,
+				0000000015F0 /* TextCompositionLayer.swift in Sources */,
+				000000001870 /* TextDocument.swift in Sources */,
+				000000001710 /* TextLayerModel.swift in Sources */,
+				000000001750 /* Transform.swift in Sources */,
+				000000001830 /* Trim.swift in Sources */,
+				000000001920 /* TrimPathNode.swift in Sources */,
+				0000000018E0 /* ValueContainer.swift in Sources */,
+				000000001CC0 /* Vectors.swift in Sources */,
+				000000001B90 /* VectorsExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000001DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002500 /* AnimatedButton.swift in Sources */,
+				000000002510 /* AnimatedControl.swift in Sources */,
+				000000002520 /* AnimatedSwitch.swift in Sources */,
+				000000001EE0 /* Animation.swift in Sources */,
+				000000002470 /* AnimationCacheProvider.swift in Sources */,
+				000000001E10 /* AnimationContainer.swift in Sources */,
+				0000000023A0 /* AnimationContext.swift in Sources */,
+				0000000024F0 /* AnimationImageProvider.swift in Sources */,
+				000000002490 /* AnimationKeypath.swift in Sources */,
+				000000002360 /* AnimationKeypathExtension.swift in Sources */,
+				000000002440 /* AnimationPublic.swift in Sources */,
+				000000002530 /* AnimationSubview.swift in Sources */,
+				0000000025A0 /* AnimationTime.swift in Sources */,
+				000000002450 /* AnimationView.swift in Sources */,
+				000000002460 /* AnimationViewInitializers.swift in Sources */,
+				0000000022F0 /* AnimatorNode.swift in Sources */,
+				000000002340 /* AnimatorNodeDebugging.swift in Sources */,
+				000000002140 /* AnyNodeProperty.swift in Sources */,
+				000000002150 /* AnyValueContainer.swift in Sources */,
+				0000000024A0 /* AnyValueProvider.swift in Sources */,
+				000000001EF0 /* Asset.swift in Sources */,
+				000000001F00 /* AssetLibrary.swift in Sources */,
+				0000000023E0 /* BezierPath.swift in Sources */,
+				000000002540 /* BundleImageProvider.swift in Sources */,
+				000000002370 /* CGFloatExtensions.swift in Sources */,
+				0000000025B0 /* Color.swift in Sources */,
+				0000000023F0 /* ColorExtension.swift in Sources */,
+				0000000024B0 /* ColorValueProvider.swift in Sources */,
+				000000002550 /* CompatibleAnimationKeypath.swift in Sources */,
+				000000002560 /* CompatibleAnimationView.swift in Sources */,
+				000000001E20 /* CompositionLayer.swift in Sources */,
+				000000001EA0 /* CompositionLayersInitializer.swift in Sources */,
+				000000002400 /* CompoundBezierPath.swift in Sources */,
+				000000002410 /* CurveVertex.swift in Sources */,
+				000000001FC0 /* DashPattern.swift in Sources */,
+				000000002000 /* Ellipse.swift in Sources */,
+				000000002240 /* EllipseNode.swift in Sources */,
+				000000002570 /* FilepathImageProvider.swift in Sources */,
+				000000002010 /* FillI.swift in Sources */,
+				0000000022A0 /* FillNode.swift in Sources */,
+				000000002200 /* FillRenderer.swift in Sources */,
+				0000000024C0 /* FloatValueProvider.swift in Sources */,
+				0000000020E0 /* Font.swift in Sources */,
+				0000000020F0 /* Glyph.swift in Sources */,
+				000000002020 /* GradientFill.swift in Sources */,
+				0000000022B0 /* GradientFillNode.swift in Sources */,
+				000000002210 /* GradientFillRenderer.swift in Sources */,
+				000000002030 /* GradientStroke.swift in Sources */,
+				0000000022C0 /* GradientStrokeNode.swift in Sources */,
+				000000002220 /* GradientStrokeRenderer.swift in Sources */,
+				000000002040 /* Group.swift in Sources */,
+				000000002190 /* GroupInterpolator.swift in Sources */,
+				000000002290 /* GroupNode.swift in Sources */,
+				0000000021D0 /* GroupOutputNode.swift in Sources */,
+				000000001F10 /* ImageAsset.swift in Sources */,
+				000000001E30 /* ImageCompositionLayer.swift in Sources */,
+				000000001F60 /* ImageLayerModel.swift in Sources */,
+				0000000023B0 /* Interpolatable.swift in Sources */,
+				0000000023C0 /* InterpolatableExtensions.swift in Sources */,
+				000000001EB0 /* InvertedMatteLayer.swift in Sources */,
+				000000002120 /* ItemsExtension.swift in Sources */,
+				000000001F30 /* KeyedDecodingContainerExtensions.swift in Sources */,
+				000000001F40 /* Keyframe.swift in Sources */,
+				0000000023D0 /* KeyframeExtensions.swift in Sources */,
+				000000001F50 /* KeyframeGroup.swift in Sources */,
+				0000000021A0 /* KeyframeInterpolator.swift in Sources */,
+				000000002160 /* KeypathSearchable.swift in Sources */,
+				000000002350 /* LayerDebugging.swift in Sources */,
+				000000001EC0 /* LayerImageProvider.swift in Sources */,
+				000000001F70 /* LayerModel.swift in Sources */,
+				000000001ED0 /* LayerTransformNode.swift in Sources */,
+				000000002640 /* lottie-ios-tvOS-dummy.m in Sources */,
+				000000002580 /* LottieView.swift in Sources */,
+				000000002480 /* LRUAnimationCache.swift in Sources */,
+				000000001FD0 /* Marker.swift in Sources */,
+				000000001FE0 /* Mask.swift in Sources */,
+				000000001E40 /* MaskContainerLayer.swift in Sources */,
+				000000002380 /* MathKit.swift in Sources */,
+				000000002050 /* Merge.swift in Sources */,
+				000000002130 /* NodeProperty.swift in Sources */,
+				000000002170 /* NodePropertyMap.swift in Sources */,
+				000000001E50 /* NullCompositionLayer.swift in Sources */,
+				0000000021E0 /* PassThroughOutputNode.swift in Sources */,
+				000000002420 /* PathElement.swift in Sources */,
+				000000002300 /* PathNode.swift in Sources */,
+				0000000021F0 /* PathOutputNode.swift in Sources */,
+				0000000024D0 /* PointValueProvider.swift in Sources */,
+				000000002250 /* PolygonNode.swift in Sources */,
+				000000001F20 /* PrecompAsset.swift in Sources */,
+				000000001F80 /* PreCompLayerModel.swift in Sources */,
+				000000001E60 /* PreCompositionLayer.swift in Sources */,
+				000000002060 /* Rectangle.swift in Sources */,
+				000000002260 /* RectNode.swift in Sources */,
+				000000002310 /* RenderNode.swift in Sources */,
+				000000002070 /* Repeater.swift in Sources */,
+				000000002080 /* Shape.swift in Sources */,
+				000000001E70 /* ShapeCompositionLayer.swift in Sources */,
+				000000002320 /* ShapeContainerLayer.swift in Sources */,
+				000000002090 /* ShapeItem.swift in Sources */,
+				000000001F90 /* ShapeLayerModel.swift in Sources */,
+				000000002270 /* ShapeNode.swift in Sources */,
+				000000002330 /* ShapeRenderLayer.swift in Sources */,
+				0000000020A0 /* ShapeTransform.swift in Sources */,
+				0000000021B0 /* SingleValueProvider.swift in Sources */,
+				0000000024E0 /* SizeValueProvider.swift in Sources */,
+				000000001E80 /* SolidCompositionLayer.swift in Sources */,
+				000000001FA0 /* SolidLayerModel.swift in Sources */,
+				0000000020B0 /* Star.swift in Sources */,
+				000000002280 /* StarNode.swift in Sources */,
+				000000002390 /* StringExtensions.swift in Sources */,
+				0000000020C0 /* Stroke.swift in Sources */,
+				0000000022D0 /* StrokeNode.swift in Sources */,
+				000000002230 /* StrokeRenderer.swift in Sources */,
+				000000002100 /* TextAnimator.swift in Sources */,
+				0000000022E0 /* TextAnimatorNode.swift in Sources */,
+				000000001E90 /* TextCompositionLayer.swift in Sources */,
+				000000002110 /* TextDocument.swift in Sources */,
+				000000001FB0 /* TextLayerModel.swift in Sources */,
+				000000001FF0 /* Transform.swift in Sources */,
+				0000000020D0 /* Trim.swift in Sources */,
+				0000000021C0 /* TrimPathNode.swift in Sources */,
+				000000002590 /* UIColorExtension.swift in Sources */,
+				000000002180 /* ValueContainer.swift in Sources */,
+				0000000025C0 /* Vectors.swift in Sources */,
+				000000002430 /* VectorsExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000026B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000027B0 /* Pods-lottie-swift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002920 /* Pods-lottie-swift_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002A90 /* Pods-lottie-swift_macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002C00 /* Pods-lottie-swift_tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000002D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios-macOS";
+			target = 0000000014B0 /* lottie-ios-macOS */;
+			targetProxy = 000000002D30 /* PBXContainerItemProxy */;
+		};
+		000000002D60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios-tvOS";
+			target = 000000001D50 /* lottie-ios-tvOS */;
+			targetProxy = 000000002D50 /* PBXContainerItemProxy */;
+		};
+		000000002D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios-iOS";
+			target = 000000000BA0 /* lottie-ios-iOS */;
+			targetProxy = 000000002D70 /* PBXContainerItemProxy */;
+		};
+		000000002DA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-lottie-swift_Example";
+			target = 000000002650 /* Pods-lottie-swift_Example */;
+			targetProxy = 000000002D90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		000000000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		000000000BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000001430 /* lottie-ios-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios-iOS/lottie-ios-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/lottie-ios-iOS/lottie-ios-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000000BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000001430 /* lottie-ios-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios-iOS/lottie-ios-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/lottie-ios-iOS/lottie-ios-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0000000014D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000001CD0 /* lottie-ios-macOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios-macOS/lottie-ios-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/lottie-ios-macOS/lottie-ios-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0000000014E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000001CD0 /* lottie-ios-macOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios-macOS/lottie-ios-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/lottie-ios-macOS/lottie-ios-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000001D70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000025D0 /* lottie-ios-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios-tvOS/lottie-ios-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/lottie-ios-tvOS/lottie-ios-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000001D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000025D0 /* lottie-ios-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios-tvOS/lottie-ios-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/lottie-ios-tvOS/lottie-ios-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000002670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002700 /* Pods-lottie-swift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_Example/Pods-lottie-swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000002680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002710 /* Pods-lottie-swift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_Example/Pods-lottie-swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0000000027E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002870 /* Pods-lottie-swift_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_Tests/Pods-lottie-swift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0000000027F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002880 /* Pods-lottie-swift_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_Tests/Pods-lottie-swift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000002950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000029E0 /* Pods-lottie-swift_macOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_macOS/Pods-lottie-swift_macOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000002960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000029F0 /* Pods-lottie-swift_macOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_macOS/Pods-lottie-swift_macOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		000000002AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002B50 /* Pods-lottie-swift_tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_tvOS/Pods-lottie-swift_tvOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		000000002AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002B60 /* Pods-lottie-swift_tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-lottie-swift_tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-lottie-swift_tvOS/Pods-lottie-swift_tvOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000030 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000040 /* Debug */,
+				000000000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000BB0 /* Build configuration list for PBXNativeTarget "lottie-ios-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000BD0 /* Debug */,
+				000000000BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000014C0 /* Build configuration list for PBXNativeTarget "lottie-ios-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000014E0 /* Debug */,
+				0000000014D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000001D60 /* Build configuration list for PBXNativeTarget "lottie-ios-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000001D80 /* Debug */,
+				000000001D70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000002660 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000002680 /* Debug */,
+				000000002670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000027D0 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000027F0 /* Debug */,
+				0000000027E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000002940 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000002960 /* Debug */,
+				000000002950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000002AB0 /* Build configuration list for PBXNativeTarget "Pods-lottie-swift_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000002AD0 /* Debug */,
+				000000002AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000 /* Project object */;
+}
