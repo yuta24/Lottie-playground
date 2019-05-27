@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lottie_playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pov-Vj-X55">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QZ-0v-xwu">
+                                <rect key="frame" x="122" y="736" width="170" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBb-wV-LAH">
+                                        <rect key="frame" x="8" y="8" width="69" height="30"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="onPlay" destination="BYZ-38-t0r" eventType="touchUpInside" id="tN0-Eb-12q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zP-Qq-od0">
+                                        <rect key="frame" x="93" y="8" width="69" height="30"/>
+                                        <state key="normal" title="Download"/>
+                                        <connections>
+                                            <action selector="onDownload" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIv-oa-gkc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1zP-Qq-od0" firstAttribute="width" secondItem="IBb-wV-LAH" secondAttribute="width" id="IAG-r6-Wld"/>
+                                    <constraint firstAttribute="bottom" secondItem="1zP-Qq-od0" secondAttribute="bottom" constant="8" id="doh-P2-G6G"/>
+                                    <constraint firstAttribute="bottom" secondItem="IBb-wV-LAH" secondAttribute="bottom" constant="8" id="hgD-eD-XbW"/>
+                                    <constraint firstItem="IBb-wV-LAH" firstAttribute="top" secondItem="6QZ-0v-xwu" secondAttribute="top" constant="8" id="jaM-Vb-3Md"/>
+                                    <constraint firstItem="1zP-Qq-od0" firstAttribute="leading" secondItem="IBb-wV-LAH" secondAttribute="trailing" constant="16" id="niu-L5-a3z"/>
+                                    <constraint firstItem="1zP-Qq-od0" firstAttribute="top" secondItem="6QZ-0v-xwu" secondAttribute="top" constant="8" id="rre-px-NdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1zP-Qq-od0" secondAttribute="trailing" constant="8" id="vNa-xm-Ipl"/>
+                                    <constraint firstItem="IBb-wV-LAH" firstAttribute="leading" secondItem="6QZ-0v-xwu" secondAttribute="leading" constant="8" id="zhM-mx-v3D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pov-Vj-X55" secondAttribute="trailing" id="0Rg-As-JqK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6QZ-0v-xwu" secondAttribute="bottom" constant="80" id="DgW-MA-ljn"/>
+                            <constraint firstItem="pov-Vj-X55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E4b-ht-xW9"/>
+                            <constraint firstItem="pov-Vj-X55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FS4-cC-gxc"/>
+                            <constraint firstItem="6QZ-0v-xwu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VXs-hT-VQ9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pov-Vj-X55" secondAttribute="bottom" id="XVM-ji-e5D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animationContainerView" destination="pov-Vj-X55" id="dze-cD-ThG"/>
+                        <outlet property="containerView" destination="6QZ-0v-xwu" id="19m-dL-ZvJ"/>
+                        <outlet property="downloadButton" destination="1zP-Qq-od0" id="Nl7-eh-yqD"/>
+                        <outlet property="playButton" destination="IBb-wV-LAH" id="hFW-xM-Lnh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
